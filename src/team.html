@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/output.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <script type="text/javascript" src="scripts/navigation.js"></script>
+    <title>Team – SFU Robot Soccer</title>
+</head>
+<body class="flex flex-col min-h-screen px-4 text-center">
+    <!-- Header -->
+    <header class="bg-white flex h-16 items-center justify-between sticky top-0 z-auto 2xl:bg-transparent">
+        <a class="inline-flex items-center" href="./index.html">
+            <img src="./images/header-icon.png" width="48" height="48">
+            <span class="font-bold ml-2 text-lg">SFU Robot Soccer</span>
+        </a>
+        <button class="duration-300 ease-in-out p-2 transition hover:scale-110 sm:hidden" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <nav class="bg-white fixed flex-col justify-center hidden left-0 min-h-screen min-w-full text-2xl top-0 -z-50 sm:bg-transparent sm:block sm:min-h-max sm:min-w-min sm:static sm:text-base sm:top-auto">
+            <ul class="font-semibold mb-4 space-y-4 sm:inline-flex sm:mb-0 sm:space-x-4 sm:space-y-0">
+                <li class="duration-300 ease-in-out transition hover:scale-110"><a href="./index.html">Home</a></li>
+                <li class="duration-300 ease-in-out transition hover:scale-110"><a href="./team.html">Team</a></li>
+                <li class="duration-300 ease-in-out transition hover:scale-110"><a href="./gallery.html">Gallery</a></li>
+                <li class="duration-300 ease-in-out transition hover:scale-110"><a href="./sponsors.html">Sponsors</a></li>
+            </ul>
+            <a class="mt-6 sm:mt-0 sm:ml-4" href="https://go.sfss.ca/clubs/721/info"><button class="bg-red-900 duration-300 ease-in-out font-semibold px-3 py-2.5 rounded-full text-base sm:text-sm text-white transition hover:bg-red-700 hover:scale-110" href="./join.html">Join Us</button></a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-screen-md mb-auto mx-auto py-10 text-center space-y-16">
+        <!-- Page Heading -->
+        <div class="space-y-4">
+            <h1 class="font-extrabold text-6xl">Our Team</h1>
+            <p>At the SFU Robot Soccer Club, our team members come from different majors, experience levels and backgrounds.</p>
+            <p>Our core teams are our <b>Mechanics</b>, <b>Electronics</b> and <b>Software</b> team where we work together to get our autonomous robots competition ready.</p>
+        </div>
+        <!-- Team Descriptions -->
+        <div class="space-y-10">
+            <!-- Electronics Team -->
+            <div class="text-left space-y-4">
+                <!-- Heading -->
+                <h3 class="font-bold text-4xl">Electronics</h3>
+                <!-- Hook -->
+                <p class="font-semibold">Practical design of robotic mechanisms</p>
+                <!-- Description -->
+                <p class="text-justify">The electronics team designs and tests all the electrical components on the robots, including creating custom PCBs from scratch. Our modular PCB design integrates multiple daughterboards, including the motor driver, kicker driver and dribbler motor driver boards onto a central motherboard using removable connectors. This team gives its members experience using Altium Designer, an industry standard PCB design tool, working through the entire design process from schematic capture to PCB routing. In addition, members of the electronics team work a lot on testing and troubleshooting all parts of the design to work on improvements for future robot generations.</p>
+                <!-- Technologies -->
+                <div class="font-semibold space-x-1 text-xs">
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">Altium Designer</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">C</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">C++</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">LTSpice</span>
+                </div>
+            </div>
+            <!-- Mechanics Team -->
+            <div class="text-right space-y-4">
+                <!-- Heading -->
+                <h3 class="font-bold text-4xl">Mechanics</h3>
+                <!-- Hook -->
+                <p class="font-semibold">Building the brains of our system</p>
+                <!-- Description -->
+                <p class="text-justify">At the software team our members collaborate together to develop the core and support elements of our software system. As speed gives us a competitive advantage we use a C++ tech stack to develop our AI and robotic control algorithms as well as our interface. We are looking for motivated students who are interested in applying their knowledge across and beyond the curriculum into practice. We are currently working on developing our robotic command and control systems, our data systems and improving our GUI among other tasks. In our team we hope you not only gain technical experience but also experience in collaborating with your peers through pair programming, code reviews, documentation and meetings.
+                </p>
+                <!-- Technologies -->
+                <div class="font-semibold space-x-1 text-xs">
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">3D Printing</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">CNC Milling</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">SolidWorks</span>
+                </div>
+            </div>
+            <!-- Software Team -->
+            <div class="text-left space-y-4">
+                <!-- Heading -->
+                <h3 class="font-bold text-4xl">Software</h3>
+                <!-- Hook -->
+                <p class="font-semibold">Design and test robot PCBs and firmware</p>
+                <!-- Description -->
+                <p class="text-justify">The electronics team designs and tests all the electrical components on the robots, including creating custom PCBs from scratch. Our modular PCB design integrates multiple daughterboards, including the motor driver, kicker driver and dribbler motor driver boards onto a central motherboard using removable connectors. This team gives its members experience using Altium Designer, an industry standard PCB design tool, working through the entire design process from schematic capture to PCB routing. In addition, members of the electronics team work a lot on testing and troubleshooting all parts of the design to work on improvements for future robot generations.</p>
+                <!-- Technologies -->
+                <div class="font-semibold space-x-1 text-xs">
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">Boost</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">C++</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">Docker</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">Eigen</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">Git</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">Google Protobuffers</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">Python</span>
+                    <span class="bg-neutral-200 inline-block px-2 py-1.5 rounded-full">Qt5</span>
+                </div>
+            </div>
+        </div>
+        <!-- Team -->
+        <div class="space-y-10">
+            <!-- Executive Team -->
+            <div class="space-y-4">
+                <h3 class="font-extrabold text-4xl">Executive Team</h3>
+                <div class="space-x-4 space-y-4">
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">President</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px]">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Vice President</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px]">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Vice President of Finance</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px]">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Vice President of Administration</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Members -->
+            <div class="space-y-4">
+                <h3 class="font-extrabold text-4xl">Team Members</h3>
+                <div class="space-x-4 space-y-4">
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                    <div class="align-top inline-block max-w-[120px] my-4">
+                        <img class="m-auto rounded-full" src="images/portrait.jpeg" width="120" height="120">
+                        <span class="inline-block mt-2 space-y-1">
+                            <p class="font-semibold leading-4">Squidward Tentacles</p>
+                            <p class="text-sm leading-4">Software</p>
+                            <p class="text-sm leading-4">Researcher</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="p-4 text-neutral-600 text-sm">2022 SFU Robot Soccer</p>
+    </footer>
+</body>
+</html>

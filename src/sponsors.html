@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/output.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <script type="text/javascript" src="scripts/navigation.js"></script>
+    <title>Sponsors – SFU Robot Soccer</title>
+</head>
+<body class="flex flex-col min-h-screen px-4 text-center">
+    <!-- Header -->
+    <header class="bg-white flex h-16 items-center justify-between sticky top-0 z-auto 2xl:bg-transparent">
+        <a class="inline-flex items-center" href="./index.html">
+            <img src="./images/header-icon.png" width="48" height="48">
+            <span class="font-bold ml-2 text-lg">SFU Robot Soccer</span>
+        </a>
+        <button class="duration-300 ease-in-out p-2 transition hover:scale-110 sm:hidden" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <nav class="bg-white fixed flex-col justify-center hidden left-0 min-h-screen min-w-full text-2xl top-0 -z-50 sm:bg-transparent sm:block sm:min-h-max sm:min-w-min sm:static sm:text-base sm:top-auto">
+            <ul class="font-semibold mb-4 space-y-4 sm:inline-flex sm:mb-0 sm:space-x-4 sm:space-y-0">
+                <li class="duration-300 ease-in-out transition hover:scale-110"><a href="./index.html">Home</a></li>
+                <li class="duration-300 ease-in-out transition hover:scale-110"><a href="./team.html">Team</a></li>
+                <li class="duration-300 ease-in-out transition hover:scale-110"><a href="./gallery.html">Gallery</a></li>
+                <li class="duration-300 ease-in-out transition hover:scale-110"><a href="./sponsors.html">Sponsors</a></li>
+            </ul>
+            <a class="mt-6 sm:mt-0 sm:ml-4" href="https://go.sfss.ca/clubs/721/info"><button class="bg-red-900 duration-300 ease-in-out font-semibold px-3 py-2.5 rounded-full text-base sm:text-sm text-white transition hover:bg-red-700 hover:scale-110" href="./join.html">Join Us</button></a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-screen-md mb-auto mx-auto py-10 text-center space-y-16">
+        <!-- Page Heading -->
+        <div class="space-y-4">
+            <h1 class="font-extrabold text-6xl">Sponsors</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum minima pariatur accusantium odit maxime fuga eos dolorem magni eligendi, iste in quibusdam fugiat reiciendis ad ipsum laboriosam error rerum.</p>
+        </div>
+        <!-- Sponsors -->
+        <div class="space-y-10">
+            <!-- Gold Sponsors -->
+            <h3 class="font-bold text-4xl">Gold Sponsors</h3>
+            <div class="m-auto">
+                <img class="inline-block" src="images/Altium.jpeg" width="320">
+                <img class="inline-block" src="images/SolidWorks.jpeg" width="320">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="p-4 text-neutral-600 text-sm">2022 SFU Robot Soccer</p>
+    </footer>
+</body>
+</html>
