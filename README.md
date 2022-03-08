@@ -13,5 +13,5 @@ npm install -D tailwindcss
 ### Development
 
 ```
-npx tailwindcss -i ./src/input.css -o ./src/styles/output.css --watch
+npx tailwindcss -i ./input.css -o ./src/styles/output.css --watch
 ```
