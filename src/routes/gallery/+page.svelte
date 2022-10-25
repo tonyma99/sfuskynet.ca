@@ -45,7 +45,6 @@
 
 <style>
     h1 {
-        font-weight: 600;
         font-size: 3em;
     }
 

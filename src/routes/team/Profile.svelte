@@ -26,10 +26,12 @@
         font-size: 1em;
         font-weight: 600;
         margin: 6px 0;
+        line-height: 1;
     }
     
     .profile--position {
         font-size: 0.9em;
         margin: 0;
+        line-height: 1;
     }
 </style>

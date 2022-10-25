@@ -23,18 +23,19 @@
     }
 
     h3 {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 1.6em;
         margin: 0;
 
     }
 
     a {
+        font-weight: 600;
         margin-top: auto;
         align-self: center;
         background-color: #a6192e;
         color: #fff;
-        padding: 6px 8px;
+        padding: 6px 12px;
         border-radius: 0.5rem;
     }
 

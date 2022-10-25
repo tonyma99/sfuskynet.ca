@@ -1,6 +1,7 @@
 <script>
     export let name;
     export let headline;
+    export let image;
     export let description;
     export let tags;
 </script>
@@ -8,6 +9,7 @@
 <div class="team--section">
     <h3 class="team--name">{name}</h3>
     <p class="team--headline">{headline}</p>
+    <img src={image} alt="{name} team image">
     <p class="team--description">{description}</p>
     <div class="team--tags">
     {#each tags as tag}
@@ -30,9 +32,12 @@
         margin: 0;
     }
 
+    img {
+        width: 100%;
+    }
+
     .team--name {
         font-size: 2em;
-        font-weight: 500;
     }
 
     .team--headline {
@@ -51,7 +56,7 @@
         display: inline-flex;
         font-size: 0.8em;
         line-height: normal;
-        margin: 2px;
+        margin: 4px;
         padding: 0.4em 0.8em;
     }
 </style>
