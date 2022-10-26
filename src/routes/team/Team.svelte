@@ -40,7 +40,7 @@
         overflow: hidden;
         color: white;
         background-size: contain;
-        border-radius: 0.5em;
+        border-radius: 0.5rem;
         width: 100%;
         aspect-ratio: 18/7;
         color: white;

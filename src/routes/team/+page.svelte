@@ -68,7 +68,7 @@
     <title>SFU Robot Soccer - Team</title>
 </svelte:head>
 
-<div>
+<div class="main--content">
     <div class="section--intro">
         <h1>Team</h1>
         <p>At the SFU Robot Soccer Club, our team members come from different majors, experience levels and backgrounds. Our core teams are our <b>Mechanics</b>, <b>Electronics</b> and <b>Software</b> team where we work together to get our autonomous robots competition ready.</p>
@@ -89,6 +89,13 @@
 </div>
 
 <style>
+    .main--content {
+        max-width: 64rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1rem;
+    }
+    
     h1 {
         font-size: 3em;
     }

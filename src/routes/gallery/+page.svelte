@@ -30,7 +30,7 @@
     <title>SFU Robot Soccer - Gallery</title>
 </svelte:head>
 
-<div>
+<div class="main--content">
     <div class="section--intro">
         <h1>Gallery</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates reprehenderit eius dignissimos molestias optio nulla et voluptate rerum perferendis! Nesciunt aliquid unde sequi ducimus beatae eius fugiat odit illo sapiente.</p>
@@ -38,12 +38,19 @@
 
     <div class="section--gallery">
         {#each images as image}
-            <img src={image} alt="Gallery entry">
+            <img class="section--gallery_image" src={image} alt="Gallery entry">
         {/each}
     </div>
 </div>
 
 <style>
+    .main--content {
+        max-width: 64rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1rem;
+    }
+    
     h1 {
         font-size: 3em;
     }
@@ -52,7 +59,12 @@
         margin-top: 4rem;
     }
 
-    .section--gallery img {
+    .section--gallery_image + .section--gallery_image {
+        margin-top: 0.5rem;
+    }
+
+    .section--gallery_image {
         width: 100%;
+        border-radius: 0.5rem;
     }
 </style>

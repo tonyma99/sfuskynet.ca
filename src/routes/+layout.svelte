@@ -27,7 +27,6 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
         text-align: center;
@@ -40,11 +39,5 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
-
-	@media only screen and (max-width: 768px) {
-		main {
-			padding: 0 1em;
-		}
 	}
 </style>

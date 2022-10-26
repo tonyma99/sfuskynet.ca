@@ -17,7 +17,7 @@
     <title>SFU Robot Soccer - Sponsors</title>
 </svelte:head>
 
-<div>
+<div class="main--content">
     <div class="section--intro">
         <h1>Sponsors</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, eaque voluptatibus ad fugit incidunt velit eum cupiditate itaque rerum hic doloribus cum earum sed modi delectus illo exercitationem adipisci!</p>
@@ -32,6 +32,13 @@
 </div>
 
 <style>
+    .main--content {
+        max-width: 64rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1rem;
+    }
+
     h1 {
         font-size: 3em;
     }
@@ -42,7 +49,6 @@
 
     .section--gold_sponsors h3 {
         font-size: 2em;
-        font-weight: 500;
     }
 
     .section--gold_sponsors img {
