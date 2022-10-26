@@ -26,6 +26,7 @@
 
 <div>
     <div class="section section--intro" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/background.jpg');">
+        <img class="intro-logo" src="/logo.png" alt="SFU Robot Socccer Club team logo" width=128>
         <h1 class="intro--heading">SFU Robot Soccer</h1>
         <p class="intro--text">Build a legacy and tradition of extracurricular innovation and engineering engagement.</p>
     </div>
@@ -74,6 +75,11 @@
 
     h3 {
         font-size: 1.5em;
+    }
+
+    .intro-logo {
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
     
     .intro--heading {
@@ -135,6 +141,16 @@
             font-size: 1.2em;
             margin-top: 1rem;
             line-height: 1.2;
+        }
+
+        .intro-logo {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-height: 768px) {
+        .intro-logo {
+            display: none;
         }
     }
 </style>
