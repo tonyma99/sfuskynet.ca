@@ -31,7 +31,7 @@
 		margin: 0 auto;
 		box-sizing: border-box;
         text-align: center;
-		margin-bottom: 2rem;
+		margin-bottom: 4rem;
 	}
 
 	footer {

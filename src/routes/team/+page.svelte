@@ -4,6 +4,17 @@
 
     const teams = [
         {
+            name: 'Mechanics',
+            headline: 'Practical design of robotic mechanisms',
+            image: '/mechanics.jpg',
+            description: 'The Mechanics team gives shape and character to our team of robots and is a great way to get started in the club. Members are introduced to the basics of CAD and work on designing components such as base-plates, motor mounts and kicker systems, usually under the supervision of more senior members. During this process, the mechanics team focuses on creating an efficient design workflow and generating documentation so that future team members can learn about how our robots have evolved over time. Mechanics members primarily use SolidWorks to familiarize themselves with the basics of mechanical design and experience teamwork in a production environment.',
+            tags: [
+                '3D Printing',
+                'CNC Milling',
+                'SolidWorks',
+            ],
+        },
+        {
             name: 'Electronics',
             headline: 'Design and test robot PCBs and firmware',
             image: '/electronics.jpg',
@@ -13,17 +24,6 @@
                 'C',
                 'C++',
                 'LTSpice',
-            ],
-        },
-        {
-            name: 'Mechanics',
-            headline: 'Practical design of robotic mechanisms',
-            image: '/mechanics.jpg',
-            description: 'The Mechanics team gives shape and character to our team of robots and is a great way to get started in the club. Members are introduced to the basics of CAD and work on designing components such as base-plates, motor mounts and kicker systems, usually under the supervision of more senior members. During this process, the mechanics team focuses on creating an efficient design workflow and generating documentation so that future team members can learn about how our robots have evolved over time. Mechanics members primarily use SolidWorks to familiarize themselves with the basics of mechanical design and experience teamwork in a production environment.',
-            tags: [
-                '3D Printing',
-                'CNC Milling',
-                'SolidWorks',
             ],
         },
         {

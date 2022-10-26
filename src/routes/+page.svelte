@@ -45,11 +45,16 @@
     <div class="section--join">
         <h3>Join Us!</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nostrum. Culpa odio assumenda ipsam eos? Quas animi, debitis voluptates fuga veniam commodi architecto enim ab. Illo dolor asperiores quod atque.</p>
-        <a class="join--button" href="https://go.sfss.ca/clubs/721/info">Join Us</a>
+        <div class="join--button_container"><a class="join--button join--join_button" href="https://go.sfss.ca/clubs/721/info">Join Us</a></div>
+        <div class="join--button_container"><a class="join--button join--email_button" href="mailto:sfurs@sfu.ca">Contact Us</a></div>
     </div>
 </div>
 
 <style>
+    h3 {
+        font-size: 1.5em;
+    }
+    
     .intro--heading {
         font-size: 3em;
         line-height: 1;
@@ -68,16 +73,31 @@
         margin-bottom: 3rem;
     }
 
+    .join--button_container {
+        margin-top: 1.5em;
+    }
+
     .join--button {
         color: white;
         font-weight: 500;
-        background-color: #a6192e;
         padding: 0.5em 1em;
         border-radius: 0.5em;
     }
 
-    .join--button:hover {
+    .join--join_button {
+        background-color: #a6192e;
+    }
+
+    .join--join_button:hover {
         background-color: #cc0633;
+    }
+
+    .join--email_button {
+        background-color: #0091ea;
+    }
+
+    .join--email_button:hover {
+        background-color: #00b0ff;
     }
 
     div + div {
