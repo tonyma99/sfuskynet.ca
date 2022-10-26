@@ -106,6 +106,7 @@
 
     .mobile--menu a {
         display: block;
+        font-size: 1.2em;
     }
 
     .mobile--menu_item {
