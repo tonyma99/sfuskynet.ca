@@ -7,9 +7,10 @@
 </script>
 
 <div class="team--section">
-    <h3 class="team--name">{name}</h3>
-    <p class="team--headline">{headline}</p>
-    <img src={image} alt="{name} team image">
+    <div class="team--image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({image});">
+        <h3 class="team--name">{name}</h3>
+        <p class="team--headline">{headline}</p>
+    </div>
     <p class="team--description">{description}</p>
     <div class="team--tags">
     {#each tags as tag}
@@ -20,7 +21,7 @@
 
 <style>
     div {
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
 
     div > * {
@@ -32,31 +33,52 @@
         margin: 0;
     }
 
-    img {
+    .team--image {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        color: white;
+        background-size: contain;
+        border-radius: 0.5em;
         width: 100%;
+        aspect-ratio: 18/7;
+        color: white;
     }
 
     .team--name {
-        font-size: 2em;
+        color: #fafafa;
+        font-weight: 600;
+        font-size: 3em;
+        margin: 0;
     }
 
     .team--headline {
+        color: #fafafa;
+        font-size: 1.2em;
         font-weight: 500;
-    }
-
-    .team--description {
-        font-size: 1em;
-        
+        margin: 0;
     }
 
     .team--tag {
-        background-color: #a6192e;
+        background-color: #a6192e;;
         border-radius: 2em;
-        color: #fff;
+        color: #f8f8f8;
         display: inline-flex;
         font-size: 0.8em;
         line-height: normal;
         margin: 4px;
         padding: 0.4em 0.8em;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .team--name {
+            font-weight: 500;
+            font-size: 2em;
+        }
+        .team--headline {
+            font-size: 1em;
+            font-weight: normal;
+        }
     }
 </style>

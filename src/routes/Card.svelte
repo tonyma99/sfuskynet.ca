@@ -34,7 +34,7 @@
         margin-top: auto;
         align-self: center;
         background-color: #a6192e;
-        color: #fff;
+        color: #f8f8f8;
         padding: 6px 12px;
         border-radius: 0.5rem;
     }

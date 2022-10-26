@@ -85,6 +85,7 @@
     }
 
     .join--join_button {
+        color: #f8f8f8;
         background-color: #a6192e;
     }
 
@@ -93,6 +94,7 @@
     }
 
     .join--email_button {
+        color: #f8f8f8;
         background-color: #0091ea;
     }
 
