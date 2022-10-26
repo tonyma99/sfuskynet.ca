@@ -5,7 +5,7 @@
     $: mobile = innerWidth <= 768;
     $: menu = false;
     $: if (!mobile) {
-        toggle();
+        menu = false;
     }
 
     function toggle() {
