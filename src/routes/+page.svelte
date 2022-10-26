@@ -69,7 +69,6 @@
         color: #f8f8f8;
         margin: 0 auto;
         padding: 0 1rem;
-        text-transform: uppercase;
         max-width: 64rem;
     }
 
@@ -80,6 +79,7 @@
     .intro--heading {
         font-size: 4em;
         line-height: 1;
+        text-transform: uppercase;
     }
 
     .intro--text {
@@ -133,7 +133,6 @@
 
         .intro--text {
             font-size: 1.2em;
-            font-weight: 500;
             margin-top: 1rem;
             line-height: 1.2;
         }
