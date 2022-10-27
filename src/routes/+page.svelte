@@ -90,6 +90,7 @@
         font-size: 4em;
         line-height: 1;
         text-transform: uppercase;
+        text-shadow: 0 4px rgba(0, 0, 0, 0.2);
     }
 
     .intro--text {
@@ -97,6 +98,7 @@
         font-size: 1.25em;
         margin-top: 1rem;
         line-height: 1.2;
+        text-shadow: 0 3px rgba(0, 0, 0, 0.2);
     }
 
     .cards--text {
