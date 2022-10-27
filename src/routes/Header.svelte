@@ -1,10 +1,11 @@
 <script>
-    import { page } from '$app/stores';
+    import { navigating, page } from '$app/stores';
+
+    let menu = false;
 
     $: innerWidth = 0;
     $: mobile = innerWidth <= 768;
-    $: menu = false;
-    $: if (!mobile) {
+    $: if (!mobile && menu || $navigating && menu) {
         menu = false;
     }
 
