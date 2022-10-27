@@ -51,6 +51,9 @@
 </div>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
     .section--intro {
         height: 50vh;
         background-size: cover;
@@ -83,13 +86,15 @@
     }
     
     .intro--heading {
+        font-family: 'Archivo Black', sans-serif;
         font-size: 4em;
         line-height: 1;
         text-transform: uppercase;
     }
 
     .intro--text {
-        font-size: 1.5em;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25em;
         margin-top: 1rem;
         line-height: 1.2;
     }
