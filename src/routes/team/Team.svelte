@@ -48,6 +48,7 @@
 
     .team--name {
         color: #fafafa;
+        text-shadow: 0 4px rgba(0, 0, 0, 0.2);
         font-weight: 600;
         font-size: 3em;
         margin: 0;
@@ -55,6 +56,7 @@
 
     .team--headline {
         color: #fafafa;
+        text-shadow: 0 3px rgba(0, 0, 0, 0.2);
         font-size: 1.2em;
         font-weight: 500;
         margin: 0;
