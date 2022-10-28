@@ -55,7 +55,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
     .section--intro {
-        height: 50vh;
+        height: 70vh;
+        max-height: 1024px;
         background-size: cover;
         display: flex;
         justify-content: center;
@@ -148,10 +149,6 @@
             font-size: 1.2em;
             margin-top: 1rem;
             line-height: 1.2;
-        }
-
-        .intro-logo {
-            display: none;
         }
     }
 
