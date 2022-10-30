@@ -20,9 +20,6 @@
 </div>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-    
     div {
         margin-top: 4rem;
     }
@@ -53,7 +50,6 @@
         color: #fafafa;
         font-family: 'Archivo Black', sans-serif;
         text-transform: uppercase;
-        text-shadow: 0 4px rgba(0, 0, 0, 0.2);
         font-weight: 600;
         font-size: 3em;
         margin: 0;
@@ -61,8 +57,6 @@
 
     .team--headline {
         color: #fafafa;
-        font-family: 'Poppins', sans-serif;
-        text-shadow: 0 3px rgba(0, 0, 0, 0.2);
         font-size: 1.2em;
         font-weight: 500;
         margin: 0;
