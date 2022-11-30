@@ -27,7 +27,7 @@
         <ul>
             <li><a href="/" aria-current="{$page.url.pathname === "/"}">Home</a></li>
             <li><a href="team" aria-current="{$page.url.pathname.includes("team")}">Team</a></li>
-            <li><a href="gallery" aria-current="{$page.url.pathname.includes("gallery")}">Gallery</a></li>
+            <li><a href="vision" aria-current="{$page.url.pathname.includes("vision")}">Vision</a></li>
             <li><a href="sponsors" aria-current="{$page.url.pathname.includes("sponsors")}">Sponsors</a></li>
         </ul>
     </div>

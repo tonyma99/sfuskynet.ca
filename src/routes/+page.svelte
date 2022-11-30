@@ -8,9 +8,9 @@
             page: '/team',
         },
         {
-            heading: 'Gallery',
+            heading: 'Vision',
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate praesentium blanditiis similique eos',
-            page: '/gallery',
+            page: '/vision',
         },
         {
             heading: 'Sponsors',
