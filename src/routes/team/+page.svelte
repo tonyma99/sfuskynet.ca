@@ -46,20 +46,29 @@
 
     const execs = [
         {
-            name: 'SpongeBob SquarePants',
-            position: 'Chef',
+            name: 'Zach Spencer',
+            position: 'President',
+            profile: '/zach_spencer.jpeg',
         },
         {
-            name: 'Squidward J. Q. Tentacles',
-            position: 'Cashier',
+            name: 'Seyed Arad Shojaee',
+            position: 'Vice President',
+            profile: '/seyed_arad_shojaee.jpeg',
         },
         {
-            name: 'Patrick Star',
-            position: 'Unemployed',
+            name: 'Thomas Challis',
+            position: 'VP of Public Relations',
+            profile: '/thomas_challis.jpeg',
         },
         {
-            name: 'Eugene H. Krabs',
-            position: 'Owner and Founder of the Krusty Krab',
+            name: 'Yu-Xing Lim',
+            position: 'VP of Administration',
+            profile: '/yu_xing_lim.jpeg',
+        },
+        {
+            name: 'Adam Spelrem',
+            position: 'VP of Finance',
+            profile: '/adam_spelrem.jpeg',
         },
     ];
 </script>
