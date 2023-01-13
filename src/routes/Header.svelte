@@ -29,6 +29,7 @@
             <li><a href="team" aria-current="{$page.url.pathname.includes("team")}">Team</a></li>
             <li><a href="gallery" aria-current="{$page.url.pathname.includes("gallery")}">Gallery</a></li>
             <li><a href="sponsors" aria-current="{$page.url.pathname.includes("sponsors")}">Sponsors</a></li>
+            <li><a href="contact" aria-current="{$page.url.pathname.includes("contact")}">Contact</a></li>
         </ul>
     </div>
     {:else}
@@ -43,6 +44,7 @@
             <li on:click={toggle} class="mobile--menu_item"><a href="team" aria-current="{$page.url.pathname.includes("team")}">Team</a></li>
             <li on:click={toggle} class="mobile--menu_item"><a href="gallery" aria-current="{$page.url.pathname.includes("gallery")}">Gallery</a></li>
             <li on:click={toggle} class="mobile--menu_item"><a href="sponsors" aria-current="{$page.url.pathname.includes("sponsors")}">Sponsors</a></li>
+            <li on:click={toggle} class="mobile--menu_item"><a href="contact" aria-current="{$page.url.pathname.includes("contact")}">Contact</a></li>
         </ul>
     </div>
     {/if}
