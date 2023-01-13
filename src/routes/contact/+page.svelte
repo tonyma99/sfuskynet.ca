@@ -2,12 +2,12 @@
 	let success = false;
 	let submitted = false;
 		
-	function handleSubmit(e) {
+	async function handleSubmit(e) {
 		success = true;
 
         const formData = new FormData(e.target)
 
-        fetch("/api/message", {
+        await fetch("/api/message", {
             method: 'POST',
             body: JSON.stringify(Object.fromEntries(formData)),
             headers: {
