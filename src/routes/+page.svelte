@@ -8,14 +8,14 @@
             page: '/team',
         },
         {
-            heading: 'Gallery',
-            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate praesentium blanditiis similique eos',
-            page: '/gallery',
-        },
-        {
             heading: 'Sponsors',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quam assumenda inventore illum recusandae',
             page: '/sponsors',
+        },
+        {
+            heading: 'Contact',
+            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate praesentium blanditiis similique eos',
+            page: '/contact',
         },
     ];
 </script>
