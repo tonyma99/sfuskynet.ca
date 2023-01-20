@@ -4,8 +4,6 @@
 	async function handleSubmit(e) {
         const formData = new FormData(e.target)
 
-        console.log(Object.fromEntries(formData))
-
         const result = await fetch("/api/message", {
             method: 'POST',
             body: JSON.stringify(Object.fromEntries(formData)),
@@ -14,13 +12,13 @@
             },
         })
 
+        e.target.reset()
+
         if (result.status === 200) {
             success = 1
         } else {
             success = 0
         }
-
-        e.target.reset()
 	}
 </script>
 
