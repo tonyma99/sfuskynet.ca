@@ -1,6 +1,7 @@
 <script>
     import "../app.css";
     import Header from './Header.svelte';
+	import Footer from "./Footer.svelte";
 </script>
 
 <div class="app">
@@ -10,10 +11,7 @@
         <slot />
     </main>
 
-    <footer>
-		<img src="/logo.png" alt="SFU Robot Socccer Club team logo" width=42>
-        <p>SFU Robot Soccer</p>
-    </footer>
+    <Footer />
 </div>
 
 <style>
@@ -32,19 +30,5 @@
 		box-sizing: border-box;
         text-align: center;
 		margin-bottom: 4rem;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 1rem 0;
-	}
-
-	footer p {
-		margin: 0;
-		margin-top: 4px;
-		color: #777;
 	}
 </style>
