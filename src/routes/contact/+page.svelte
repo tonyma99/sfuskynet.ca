@@ -3,11 +3,11 @@
 	let submitted = false;
 		
 	async function handleSubmit(e) {
-		success = true;
-
         const formData = new FormData(e.target)
 
-        await fetch("/api/message", {
+        console.log(Object.fromEntries(formData))
+
+        const result = await fetch("/api/message", {
             method: 'POST',
             body: JSON.stringify(Object.fromEntries(formData)),
             headers: {
@@ -15,7 +15,12 @@
             },
         })
 
+        if (result.status === 200) {
+            success = true;
+        }
+
         e.target.reset();
+        submitted = true;
 	}
 </script>
 
@@ -30,8 +35,11 @@
     </div>
 
     <div class="section--main">
-        {#if success}	
+        {#if success && submitted}	
             <p class="alert-success">Message successfully sent.</p>
+        {/if}
+        {#if !success && submitted}
+            <p class="alert-failure">Message failed to send.</p>
         {/if}
         <form id="contact-form" class:submitted on:submit|preventDefault={handleSubmit}>
             <input name="name" type="text" class="form-input" placeholder="Full name" required>
@@ -97,5 +105,9 @@
 
     .alert-success {
         color: #376e37;
+    }
+
+    .alert-failure {
+        color: #a6192e;
     }
 </style>

@@ -4,8 +4,8 @@ import sgMail from '@sendgrid/mail'
 sgMail.setApiKey(SENDGRID_API_KEY)
 
 export async function POST({ request }) {
-    const data = await request.json();
-    const text = `${data.name} (${data.email})\n---\n\n${data.message}`
+    const body = await request.json();
+    const text = `${body.name} (${body.email})\n---\n\n${body.message}`
 
     try {
         const msg = {
@@ -16,8 +16,9 @@ export async function POST({ request }) {
         }
         sgMail.send(msg)
     } catch (e) {
-        return new Response(e);
+        console.log(e)
+        return new Response({ status: 500 });
     }
    
-    return new Response('Message successfully sent.');
+    return new Response({ status: 200 });
 }
