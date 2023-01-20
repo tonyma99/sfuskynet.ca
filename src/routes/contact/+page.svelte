@@ -1,6 +1,5 @@
 <script>
-	let success = false;
-	let submitted = false;
+	let success = -1
 		
 	async function handleSubmit(e) {
         const formData = new FormData(e.target)
@@ -16,11 +15,12 @@
         })
 
         if (result.status === 200) {
-            success = true;
+            success = 1
+        } else {
+            success = 0
         }
 
-        e.target.reset();
-        submitted = true;
+        e.target.reset()
 	}
 </script>
 
@@ -35,17 +35,17 @@
     </div>
 
     <div class="section--main">
-        {#if success && submitted}	
+        {#if success === 1}	
             <p class="alert-success">Message successfully sent.</p>
         {/if}
-        {#if !success && submitted}
+        {#if !success === 0}
             <p class="alert-failure">Message failed to send.</p>
         {/if}
-        <form id="contact-form" class:submitted on:submit|preventDefault={handleSubmit}>
+        <form id="contact-form" on:submit|preventDefault={handleSubmit}>
             <input name="name" type="text" class="form-input" placeholder="Full name" required>
             <input name="email" type="email" class="form-input" placeholder="Email" required>
             <textarea name="message" type="text" class="form-input" placeholder="Message" required />
-            <button class="form-input" on:click={() => submitted = true}>Submit</button>
+            <button class="form-input">Submit</button>
         </form>
     </div>
 </div>
