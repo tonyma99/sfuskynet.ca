@@ -39,10 +39,10 @@
     {#if menu}
     <div class="mobile--menu">
         <ul>
-            <li on:click={toggle} class="mobile--menu_item"><a href="/" aria-current="{$page.url.pathname === "/"}">Home</a></li>
-            <li on:click={toggle} class="mobile--menu_item"><a href="team" aria-current="{$page.url.pathname.includes("team")}">Team</a></li>
-            <li on:click={toggle} class="mobile--menu_item"><a href="sponsors" aria-current="{$page.url.pathname.includes("sponsors")}">Sponsors</a></li>
-            <li on:click={toggle} class="mobile--menu_item"><a href="contact" aria-current="{$page.url.pathname.includes("contact")}">Contact</a></li>
+            <li class="mobile--menu_item"><a href="/" on:click={toggle} aria-current="{$page.url.pathname === "/"}">Home</a></li>
+            <li class="mobile--menu_item"><a href="team" on:click={toggle} aria-current="{$page.url.pathname.includes("team")}">Team</a></li>
+            <li class="mobile--menu_item"><a href="sponsors" on:click={toggle} aria-current="{$page.url.pathname.includes("sponsors")}">Sponsors</a></li>
+            <li class="mobile--menu_item"><a href="contact" on:click={toggle} aria-current="{$page.url.pathname.includes("contact")}">Contact</a></li>
         </ul>
     </div>
     {/if}
