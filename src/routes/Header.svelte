@@ -27,7 +27,6 @@
         <ul>
             <li><a href="/" aria-current="{$page.url.pathname === "/"}">Home</a></li>
             <li><a href="team" aria-current="{$page.url.pathname.includes("team")}">Team</a></li>
-            <li><a href="vision" aria-current="{$page.url.pathname.includes("vision")}">Vision</a></li>
             <li><a href="sponsors" aria-current="{$page.url.pathname.includes("sponsors")}">Sponsors</a></li>
             <li><a href="contact" aria-current="{$page.url.pathname.includes("contact")}">Contact</a></li>
         </ul>
@@ -42,7 +41,6 @@
         <ul>
             <li on:click={toggle} class="mobile--menu_item"><a href="/" aria-current="{$page.url.pathname === "/"}">Home</a></li>
             <li on:click={toggle} class="mobile--menu_item"><a href="team" aria-current="{$page.url.pathname.includes("team")}">Team</a></li>
-            <li on:click={toggle} class="mobile--menu_item"><a href="gallery" aria-current="{$page.url.pathname.includes("gallery")}">Gallery</a></li>
             <li on:click={toggle} class="mobile--menu_item"><a href="sponsors" aria-current="{$page.url.pathname.includes("sponsors")}">Sponsors</a></li>
             <li on:click={toggle} class="mobile--menu_item"><a href="contact" aria-current="{$page.url.pathname.includes("contact")}">Contact</a></li>
         </ul>
