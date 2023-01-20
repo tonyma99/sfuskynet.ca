@@ -49,26 +49,36 @@
             name: 'Zach Spencer',
             position: 'President',
             profile: '/zach_spencer.jpeg',
+            linkedin: 'https://www.linkedin.com/in/zachary-k-spencer/',
+            email: 'zach_spencer@sfu.ca',
         },
         {
             name: 'Seyed Arad Shojaee',
             position: 'Vice President',
             profile: '/seyed_arad_shojaee.jpeg',
+            linkedin: 'https://www.linkedin.com/in/seyed-arad-shojaee-a8a175222/',
+            email: 'sas44@sfu.ca',
         },
         {
             name: 'Thomas Challis',
             position: 'VP of Public Relations',
             profile: '/thomas_challis.jpeg',
+            linkedin: 'https://www.linkedin.com/in/thomas-challis-36460b1ba/',
+            email: 'thomas_challis@sfu.ca'
         },
         {
             name: 'Yu-Xing Lim',
             position: 'VP of Administration',
             profile: '/yu_xing_lim.jpeg',
+            linkedin: 'https://www.linkedin.com/in/yu-xing-lim-10706b252/',
+            email: "yu-xing_lim@sfu.ca",
         },
         {
             name: 'Adam Spelrem',
             position: 'VP of Finance',
             profile: '/adam_spelrem.jpeg',
+            linkedin: 'https://www.linkedin.com/in/adam-spelrem-8b5059256/',
+            email: 'adam_spelrem@sfu.ca',
         },
     ];
 </script>
@@ -92,7 +102,7 @@
     <div class="section--execs">
         <h3>Executive Team</h3>
         {#each execs as exec}
-            <Profile name={exec.name} position={exec.position} profile={exec.profile} />
+            <Profile name={exec.name} position={exec.position} profile={exec.profile} linkedin={exec.linkedin} email={exec.email} />
         {/each}
     </div>
 </div>
