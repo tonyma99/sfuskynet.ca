@@ -46,7 +46,6 @@
         <h3>Join Us!</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nostrum. Culpa odio assumenda ipsam eos? Quas animi, debitis voluptates fuga veniam commodi architecto enim ab. Illo dolor asperiores quod atque.</p>
         <div class="join--button_container"><a class="join--button join--join_button" href="https://go.sfss.ca/clubs/721/info">Join Us</a></div>
-        <div class="join--button_container"><a class="join--button join--email_button" href="mailto:sfurs@sfu.ca">Contact Us</a></div>
     </div>
 </div>
 
@@ -122,15 +121,6 @@
 
     .join--join_button:hover {
         background-color: #cc0633;
-    }
-
-    .join--email_button {
-        color: #f8f8f8;
-        background-color: #0091ea;
-    }
-
-    .join--email_button:hover {
-        background-color: #00b0ff;
     }
 
     div.section + div.section {
