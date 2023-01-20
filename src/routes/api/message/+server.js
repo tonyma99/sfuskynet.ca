@@ -14,9 +14,9 @@ export async function POST({ request }) {
             subject: 'SFU Robot Soccer Club Website Message',
             text: text,
         }
-        sgMail.send(msg)
+        await sgMail.send(msg)
     } catch (e) {
-        console.log(e)
+        console.error(e)
         return new Response({ status: 500 });
     }
    
