@@ -4,17 +4,17 @@
     const cards = [
         {
             heading: 'Team',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quam assumenda inventore illum recusandae',
+            description: 'Innovative minds, diverse skills - Our Team',
             page: '/team',
         },
         {
             heading: 'Sponsors',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quam assumenda inventore illum recusandae',
+            description: 'Fueling our mission, powering our growth - Our Sponsors',
             page: '/sponsors',
         },
         {
             heading: 'Contact',
-            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate praesentium blanditiis similique eos',
+            description: 'Connect with us, get in touch - Contact Us',
             page: '/contact',
         },
     ];
@@ -38,13 +38,22 @@
 
     <div class="section section--about">
         <h3>About SFU Robot Soccer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nulla aliquid laudantium ad aliquam maxime voluptatum labore necessitatibus explicabo. Porro exercitationem voluptate velit ullam doloribus ab facere, in quasi magni! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione itaque quos, eos doloribus delectus necessitatibus quod, eum dolores reprehenderit voluptatem velit laudantium? Aperiam veniam voluptates voluptatibus libero! Amet, accusamus quaerat?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem incidunt, adipisci velit amet, nobis fugit hic nesciunt quod repudiandae omnis vero cum nisi itaque ipsa corrupti tempore autem excepturi quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto id officiis, alias minus quisquam mollitia facere quae rem dolor odio vel fugit cumque, libero beatae fuga quibusdam perferendis omnis natus.</p>
+        <p>Welcome to the Simon Fraser University Robot Soccer Club! Our club is dedicated to promoting an interest in robotics and soccer among students by combining the knowledge of software, electronics, and mechanics.<br>
+            <br>    
+            We believe that robotics and soccer are a perfect match - both require teamwork, strategy, and problem-solving. Our club members learn about robotics and programming by building and programming robots to compete in robot soccer matches against other schools.<br>
+            <br>
+            Our club is divided into three teams, software, electronics, and mechanics, each responsible for different aspects of the robot design and performance. The software team develops and programs the robot's control systems and AI, the electronics team designs and builds the robot's power and communication systems, and the mechanics team designs and fabricates the robot's body and actuators.<br>
+            <br>
+            Our club is open to students of all skill levels, from those who have never worked with robots before to those who have prior experience. We provide training and resources to help our members learn and improve in their respective teams.<br>
+            <br>
+            We participate in various local, regional, and national robotics competitions and events throughout the year, where we get to showcase our robots and compete against other teams. We also hold regular meetings and practice sessions, where we work on building and programming our robots, as well as refining our strategies for competition.<br>
+            <br>
+            We are more than just a robotics club, we are a community of students who share a passion for robotics and soccer. We encourage and support each other to learn, grow, and succeed. Join us today and be part of a winning team!</p>
     </div>
 
     <div class="section section--join">
         <h3>Join Us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nostrum. Culpa odio assumenda ipsam eos? Quas animi, debitis voluptates fuga veniam commodi architecto enim ab. Illo dolor asperiores quod atque.</p>
+        <p>Are you interested in robotics and soccer? Do you want to be part of a winning team? Then come and join us at the Simon Fraser University Robot Soccer Club! We are always looking for new members to join our software, electronics, and mechanics teams. We provide training and resources to help our members learn and improve, and we participate in various local, regional, and national robotics competitions and events throughout the year. Join us today and experience the excitement of building and programming robots to compete in robot soccer matches!</p>
         <div class="join--button_container"><a class="join--button join--join_button" href="https://go.sfss.ca/clubs/721/info">Join Us</a></div>
     </div>
 </div>

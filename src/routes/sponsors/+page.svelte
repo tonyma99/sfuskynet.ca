@@ -20,7 +20,7 @@
 <div class="main--content">
     <div class="section--intro">
         <h1>Sponsors</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus, eaque voluptatibus ad fugit incidunt velit eum cupiditate itaque rerum hic doloribus cum earum sed modi delectus illo exercitationem adipisci!</p>
+        <p>The sponsors section of our website recognizes and thanks the companies and organizations that have generously supported us. Their contributions have allowed us to continue our mission and provide valuable services to our community. We appreciate their support and encourage our audience to support these sponsors in return.</p>
     </div>
 
     <div class="section--gold_sponsors">

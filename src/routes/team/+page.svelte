@@ -123,7 +123,7 @@
         margin-top: 4rem;
     }
 
-    .section--execs h3 {
+    h3 {
         font-size: 2em;
     }
 </style>
