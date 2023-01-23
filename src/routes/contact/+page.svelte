@@ -85,6 +85,7 @@
 
     #contact-form textarea {
         height: 192px;
+        min-height: 35px;
     }
 
     #contact-form button {

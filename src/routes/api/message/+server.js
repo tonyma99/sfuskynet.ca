@@ -5,7 +5,7 @@ sgMail.setApiKey(SENDGRID_API_KEY)
 
 export async function POST({ request }) {
     const body = await request.json()
-    const text = `${body.name} (${body.email})\n---\n\n${body.message}`
+    const text = `Name: ${body.name}\nEmail: (${body.email})\n---\n\n${body.message}`
 
     try {
         const msg = {
