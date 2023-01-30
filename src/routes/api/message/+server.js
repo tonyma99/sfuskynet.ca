@@ -1,6 +1,8 @@
 import { SENDGRID_API_KEY } from '$env/static/private'
 import sgMail from '@sendgrid/mail'
 
+export const prerender = true
+
 sgMail.setApiKey(SENDGRID_API_KEY)
 
 export async function POST({ request }) {
