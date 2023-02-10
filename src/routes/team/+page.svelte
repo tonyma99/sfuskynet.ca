@@ -2,9 +2,6 @@
     import Team from "./Team.svelte";
     import Profile from "./Profile.svelte";
 
-    $: innerWidth = 0;
-    $: mobile = innerWidth <= 768;
-
     const teams = [
         {
             name: 'Mechanics',
@@ -89,8 +86,6 @@
     ];
 </script>
 
-<svelte:window bind:innerWidth />
-
 <svelte:head>
     <title>SFU Robot Soccer - Team</title>
 </svelte:head>
@@ -101,7 +96,6 @@
         <p>At the SFU Robot Soccer Club, our team members come from different majors, experience levels and backgrounds. Our core teams are our <b>Mechanics</b>, <b>Electronics</b> and <b>Software</b> team where we work together to get our autonomous robots competition ready.</p>
     </div>
 
-    {#if mobile}
     <div class="section--nav">
         <h4>Jump to section</h4>
         <ul>
@@ -111,7 +105,6 @@
             <li><a href="#software-team">Software Team</a></li>
         </ul>
     </div>
-    {/if}
 
     <div class="section--execs">
         <h3 id="executive-team">Executive Team</h3>
