@@ -10,7 +10,7 @@
         },
         {
             name: 'Seyed Arad Shojaee',
-            position: 'Vice President',
+            position: 'VP of Member Experience',
             profile: '/seyed_arad_shojaee.jpeg',
             linkedin: 'https://www.linkedin.com/in/seyed-arad-shojaee-a8a175222/',
         },
@@ -38,13 +38,12 @@
         {
             name: 'Ara Christie',
             position: 'Director of Graphic Design',
-            // profile: '/zach_spencer.jpeg',
             linkedin: 'https://www.linkedin.com/in/ara-christie-8a0404261',
         },
         {
             name: 'Matin Keivanloo',
             position: 'Director of Outreach',
-            // profile: '/zach_spencer.jpeg',
+            profile: '/martin.jpg',
             linkedin: 'https://www.linkedin.com/in/matin-keivanloo-2152a0204',
         },
     ]
@@ -53,19 +52,19 @@
         {
             name: 'Matthew do Santos-Zounon',
             position: 'Software Team Lead',
-            // profile: '/zach_spencer.jpeg',
+            profile: '/matthew.jpeg',
             linkedin: 'https://www.linkedin.com/in/mdsz/',
         },
         {
             name: 'Arvin Amini',
             position: 'Mechanics Team Leader',
-            // profile: '/zach_spencer.jpeg',
+            profile: '/arvin.jpeg',
             linkedin: 'https://www.linkedin.com/in/arvin-amini/',
         },
         {
             name: 'Judd Foster',
             position: 'Electronics Team Leader',
-            // profile: '/zach_spencer.jpeg',
+            profile: '/judd.jpeg',
             linkedin: 'https://www.linkedin.com/in/judd-foster-568963193/',
         },
     ]
@@ -74,6 +73,7 @@
         {
             name: 'Vlad Nadtochii',
             position: 'Head of Software Development',
+            profile: 'vlad.jpeg',
             linkedin: 'https://www.linkedin.com/in/vlad-nadtochii-b451b5175/',
         }
     ]
