@@ -1,6 +1,5 @@
 <script>
     import Team from "./Team.svelte";
-    import Profile from "./Profile.svelte";
 
     const teams = [
         {
@@ -46,71 +45,16 @@
             ],
         },
     ];
-
-    const execs = [
-        {
-            name: 'Zach Spencer',
-            position: 'President',
-            profile: '/zach_spencer.jpeg',
-            linkedin: 'https://www.linkedin.com/in/zachary-k-spencer/',
-            email: 'zach_spencer@sfu.ca',
-        },
-        {
-            name: 'Seyed Arad Shojaee',
-            position: 'Vice President',
-            profile: '/seyed_arad_shojaee.jpeg',
-            linkedin: 'https://www.linkedin.com/in/seyed-arad-shojaee-a8a175222/',
-            email: 'sas44@sfu.ca',
-        },
-        {
-            name: 'Thomas Challis',
-            position: 'VP of Public Relations',
-            profile: '/thomas_challis.jpeg',
-            linkedin: 'https://www.linkedin.com/in/thomas-challis-36460b1ba/',
-            email: 'thomas_challis@sfu.ca'
-        },
-        {
-            name: 'Yu-Xing Lim',
-            position: 'VP of Administration',
-            profile: '/yu_xing_lim.jpeg',
-            linkedin: 'https://www.linkedin.com/in/yu-xing-lim-10706b252/',
-            email: "yu-xing_lim@sfu.ca",
-        },
-        {
-            name: 'Adam Spelrem',
-            position: 'VP of Finance',
-            profile: '/adam_spelrem.jpeg',
-            linkedin: 'https://www.linkedin.com/in/adam-spelrem-8b5059256/',
-            email: 'adam_spelrem@sfu.ca',
-        },
-    ];
 </script>
 
 <svelte:head>
-    <title>SFU Robot Soccer - Team</title>
+    <title>SFU Robot Soccer - Teams</title>
 </svelte:head>
 
 <div class="main--content">
     <div class="section--intro">
-        <h1>Team</h1>
+        <h1>Teams</h1>
         <p>At the SFU Robot Soccer Club, our team members come from different majors, experience levels and backgrounds. Our core teams are our <b>Mechanics</b>, <b>Electronics</b> and <b>Software</b> team where we work together to get our autonomous robots competition ready.</p>
-    </div>
-
-    <div class="section--nav">
-        <h4>Jump to section</h4>
-        <ul>
-            <li><a href="#executive-team">Executive Team</a></li>
-            <li><a href="#mechanics-team">Mechanics Team</a></li>
-            <li><a href="#electronics-team">Electronics Team</a></li>
-            <li><a href="#software-team">Software Team</a></li>
-        </ul>
-    </div>
-
-    <div class="section--execs">
-        <h3 id="executive-team">Executive Team</h3>
-        {#each execs as exec}
-            <Profile name={exec.name} position={exec.position} profile={exec.profile} linkedin={exec.linkedin} email={exec.email} />
-        {/each}
     </div>
     
     <div class="section--teams">
@@ -139,15 +83,5 @@
 
     h3 {
         font-size: 2em;
-    }
-
-    h4 {
-        margin-bottom: 1em;
-    }
-
-    ul, li {
-        list-style-type: none;
-        padding-left: 0;
-        color: #777;
     }
 </style>
