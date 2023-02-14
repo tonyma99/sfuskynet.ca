@@ -8,9 +8,9 @@
             page: '/teams',
         },
         {
-            heading: 'Sponsors',
-            description: 'Fueling our mission, powering our growth - Our Sponsors',
-            page: '/sponsors',
+            heading: 'Execs',
+            description: 'Execs',
+            page: '/execs',
         },
         {
             heading: 'Contact',
