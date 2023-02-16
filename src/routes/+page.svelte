@@ -1,23 +1,6 @@
 <script>
-    import Cards from "./Cards.svelte";
-
-    const cards = [
-        {
-            heading: 'Teams',
-            description: 'Innovative minds, diverse skills - Our Teams',
-            page: '/teams',
-        },
-        {
-            heading: 'Execs',
-            description: 'Execs',
-            page: '/execs',
-        },
-        {
-            heading: 'Contact',
-            description: 'Connect with us, get in touch - Contact Us',
-            page: '/contact',
-        },
-    ];
+    import { PageCard, PageCardContainer } from "$lib/components";
+    export let data
 </script>
 
 <svelte:head>
@@ -33,7 +16,11 @@
 
     <div class="section section--cards">
         <p class="cards--text">SFU's first Robot Soccer club aims to combine the excitement of soccer with the future of automated technology as we compete in RoboCup Soccer competitions. Our team encourages students from all programs to come together and learn concepts that are not taught in class and get hands-on experience with robotics, artificial intelligence, and teamwork.</p>    
-        <Cards {cards} />
+        <PageCardContainer>
+            {#each data.cards as card} 
+            <PageCard heading={card.heading} description={card.description} page={card.page} />
+            {/each}
+        </PageCardContainer>
     </div>
 
     <div class="section section--about">
