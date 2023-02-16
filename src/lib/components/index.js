@@ -1,6 +1,8 @@
 export { default as ContactForm } from './ContactForm.svelte'
 export { default as Container } from './Container.svelte'
 export { default as ContentPageLayout } from './ContentPageLayout.svelte'
+export { default as Footer } from './Footer.svelte'
+export { default as Header } from './Header.svelte'
 export { default as PageCard } from './PageCard.svelte'
 export { default as PageCardContainer } from './PageCardContainer.svelte'
 export { default as PageHeading } from './PageHeading.svelte'

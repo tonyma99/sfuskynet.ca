@@ -12,7 +12,6 @@
         to get our autonomous robots competition ready.
     `}
 >   
-    <h3>Teams</h3>
     {#each data.teams as team, idx}
     <TeamBlock idx={idx} name={team.name} headline={team.headline} image={team.image} description={team.description} id={team.id} tags={team.tags} />
     {/each}

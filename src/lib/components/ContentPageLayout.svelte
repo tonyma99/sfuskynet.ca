@@ -10,9 +10,17 @@
 </svelte:head>
 
 <Container>
-    <PageHeading>{headingText}</PageHeading>
-    {#if description}
-    <p>{@html description}</p>
-    {/if}
+    <div>
+        <PageHeading>{headingText}</PageHeading>
+        {#if description}
+        <p>{@html description}</p>
+        {/if}
+    </div>
     <slot />
 </Container>
+
+<style>
+    div {
+        margin-bottom: 3rem;
+    }
+</style>
