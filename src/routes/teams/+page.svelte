@@ -1,7 +1,6 @@
 <script>
     import { ContentPageLayout, TeamBlock } from '$lib/components'
     export let data
-    
 </script>
 
 <ContentPageLayout
@@ -13,6 +12,6 @@
     `}
 >   
     {#each data.teams as team, idx}
-    <TeamBlock idx={idx} name={team.name} headline={team.headline} image={team.image} description={team.description} id={team.id} tags={team.tags} />
+    <TeamBlock idx={idx} team={team} />
     {/each}
 </ContentPageLayout>
