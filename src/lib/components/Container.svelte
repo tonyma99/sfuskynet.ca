@@ -6,5 +6,6 @@
     div {
         margin: 0 auto;
         max-width: 64rem;
+        padding: 1rem;
     }
 </style>
