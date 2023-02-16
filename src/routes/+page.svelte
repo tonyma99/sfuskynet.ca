@@ -124,10 +124,4 @@
             line-height: 1.2;
         }
     }
-
-    @media only screen and (max-height: 768px) {
-        section#heading {
-            display: none;
-        }
-    }
 </style>
