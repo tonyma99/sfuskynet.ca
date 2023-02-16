@@ -32,7 +32,7 @@
     }
 
     p:nth-of-type(1) {
-        font-weight: 600;
+        font-weight: bold;
     }
     
     p:nth-of-type(2) {

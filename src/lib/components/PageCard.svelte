@@ -15,7 +15,7 @@
 
 <style>
     a {
-        font-weight: 600;
+        font-weight: bold;
         margin-top: auto;
         align-self: center;
         background-color: #a6192e;
@@ -45,7 +45,7 @@
     }
 
     h3 {
-        font-weight: 600;
+        font-weight: bold;
         font-size: 1.6em;
         margin: 0;
 

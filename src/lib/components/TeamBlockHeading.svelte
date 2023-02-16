@@ -8,7 +8,17 @@
 </div>
 
 <style>
-   div {
+    @font-face {
+        font-family: 'Helvetica Now Display';
+        src: local('Helvetica Now Display Ext Blk'), local('Helvetica-Now-Display-Ext-Blk'),
+            url('webfonts/HelveticaNowDisplay-ExtBlk/HelveticaNowDisplay-ExtBlk.woff2') format('woff2'),
+            url('webfonts/HelveticaNowDisplay-ExtBlk/HelveticaNowDisplay-ExtBlk.woff') format('woff'),
+            url('webfonts/HelveticaNowDisplay-ExtBlk/HelveticaNowDisplay-ExtBlk.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    div {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -22,22 +32,23 @@
     }
 
     h3 {
+        font-family: 'Helvetica Now Display';
+        text-transform: uppercase;
         color: #fafafa;
-        font-weight: 700;
+        font-weight: bold;
         font-size: 3em;
         margin: 0;
     }
 
     p {
         color: #fafafa;
-        font-size: 1.2em;
-        font-weight: 500;
+        font-size: 1.1rem;
         margin: 0;
     }
 
     @media only screen and (max-width: 768px) {
         h3 {
-            font-weight: 500;
+            font-weight: bold;
             font-size: 2em;
         }
         p {

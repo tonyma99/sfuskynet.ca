@@ -51,10 +51,17 @@
 </Container>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @font-face {
+        font-family: 'Helvetica Now Display';
+        src: local('Helvetica Now Display Ext Blk'), local('Helvetica-Now-Display-Ext-Blk'),
+            url('webfonts/HelveticaNowDisplay-ExtBlk/HelveticaNowDisplay-ExtBlk.woff2') format('woff2'),
+            url('webfonts/HelveticaNowDisplay-ExtBlk/HelveticaNowDisplay-ExtBlk.woff') format('woff'),
+            url('webfonts/HelveticaNowDisplay-ExtBlk/HelveticaNowDisplay-ExtBlk.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+    }
 
-   section#heading div {
+    section#heading div {
         height: 70vh;
         max-height: 1024px;
         background-size: cover;
@@ -70,13 +77,14 @@
     }
     
     section#heading h1 {
-        font-family: 'Archivo Black', sans-serif;
+        font-family: 'Helvetica Now Display';
+        font-weight: 900;
         font-size: 4rem;
         text-transform: uppercase;
     }
 
     section#heading p {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'IBM Plex Sans';
         font-size: 1.3rem;
         margin-top: 1rem;
     }
@@ -95,7 +103,7 @@
 
     section#join a {
         color: white;
-        font-weight: 500;
+        font-weight: bold;
         padding: 0.5em 1em;
         border-radius: 0.5em;
     }
