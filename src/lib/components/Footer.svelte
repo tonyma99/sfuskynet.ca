@@ -12,6 +12,7 @@
 		justify-content: center;
 		align-items: center;
 		padding: 1rem;
+        margin-top: 3rem;
 	}
 
     footer a {
