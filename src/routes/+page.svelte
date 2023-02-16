@@ -3,14 +3,14 @@
 
     const cards = [
         {
-            heading: 'Team',
-            description: 'Innovative minds, diverse skills - Our Team',
-            page: '/team',
+            heading: 'Teams',
+            description: 'Innovative minds, diverse skills - Our Teams',
+            page: '/teams',
         },
         {
-            heading: 'Sponsors',
-            description: 'Fueling ',
-            page: '/sponsors',
+            heading: 'Execs',
+            description: 'Execs',
+            page: '/execs',
         },
         {
             heading: 'Contact',

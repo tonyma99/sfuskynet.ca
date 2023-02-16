@@ -1,13 +1,15 @@
 <script>
+    export let idx;
     export let name;
     export let headline;
     export let image;
     export let description;
+    export let id;
     export let tags;
 </script>
 
-<div class="team--section">
-    <div class="team--image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({image});">
+<div id={id} class="team--section">
+    <div class="team--image {idx !== 0 ? 'mt-4' : ''}" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({image});">
         <h3 class="team--name">{name}</h3>
         <p class="team--headline">{headline}</p>
     </div>
@@ -20,7 +22,7 @@
 </div>
 
 <style>
-    div {
+    .mt-4 {
         margin-top: 4rem;
     }
 
