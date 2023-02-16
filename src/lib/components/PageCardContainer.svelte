@@ -1,13 +1,5 @@
-<script>
-    import Card from "./Card.svelte";
-
-    export let cards;
-</script>
-
 <div>
-    {#each cards as card} 
-        <Card heading={card.heading} description={card.description} page={card.page} />
-    {/each}
+    <slot />
 </div>
 
 <style>

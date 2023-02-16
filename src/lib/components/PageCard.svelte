@@ -14,6 +14,20 @@
 </div>
 
 <style>
+    a {
+        font-weight: 600;
+        margin-top: auto;
+        align-self: center;
+        background-color: #a6192e;
+        color: #f8f8f8;
+        padding: 6px 12px;
+        border-radius: 0.5rem;
+    }
+
+    a:hover {
+        background-color: #cc0633;
+    }
+    
     div {
         display: flex;
         width: 100%;
@@ -35,20 +49,6 @@
         font-size: 1.6em;
         margin: 0;
 
-    }
-
-    a {
-        font-weight: 600;
-        margin-top: auto;
-        align-self: center;
-        background-color: #a6192e;
-        color: #f8f8f8;
-        padding: 6px 12px;
-        border-radius: 0.5rem;
-    }
-
-    a:hover {
-        background-color: #cc0633;
     }
 
     @media only screen and (max-width: 768px) {

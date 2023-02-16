@@ -1,0 +1,16 @@
+<span>
+    <slot />
+</span>
+
+<style>
+    span {
+        background-color: #a6192e;;
+        border-radius: 2em;
+        color: #f8f8f8;
+        display: inline-flex;
+        font-size: 0.8em;
+        line-height: normal;
+        margin: 4px;
+        padding: 0.4em 0.8em;
+    }
+</style>

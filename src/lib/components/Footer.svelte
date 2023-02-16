@@ -11,12 +11,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 1rem 0;
-	}
-
-	footer p, footer a {
-		margin: 0;
-		margin-top: 4px;
+		padding: 1rem;
+        margin-top: 3rem;
 	}
 
     footer a {
@@ -25,5 +21,13 @@
 
     footer p {
         color: #555;
+    }
+
+    footer a, footer p {
+		margin: 0;
+	}
+
+    img {
+        margin: 0.5rem 0;
     }
 </style>

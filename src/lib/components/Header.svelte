@@ -3,7 +3,7 @@
 
     let menu = false;
 
-    $: innerWidth = 0;
+    $: innerWidth = innerWidth;
     $: mobile = innerWidth <= 768;
     $: if (!mobile && menu || $navigating && menu) {
         menu = false;
@@ -12,6 +12,14 @@
     function toggle() {
         menu = menu ? false : true;
     }
+
+    const links = [
+        { path: '/', name: 'Home' },
+        { path: '/teams', name: 'Teams' },
+        { path: '/execs', name: 'Execs' },
+        { path: '/sponsors', name: 'Sponsors' },
+        { path: '/contact', name: 'Contact'}
+    ]
 </script>
 
 <svelte:window bind:innerWidth />
@@ -22,29 +30,23 @@
             <img src="/logo.png" alt="SFU Robot Socccer Club team logo" width=42>
         </a>
     </div>
-    {#if mobile === false} 
     <div>
+        {#if !mobile} 
         <ul>
-            <li><a href="/" aria-current="{$page.url.pathname === "/"}">Home</a></li>
-            <li><a href="teams" aria-current="{$page.url.pathname.includes("teams")}">Teams</a></li>
-            <li><a href="execs" aria-current="{$page.url.pathname.includes("execs")}">Execs</a></li>
-            <li><a href="sponsors" aria-current="{$page.url.pathname.includes("sponsors")}">Sponsors</a></li>
-            <li><a href="contact" aria-current="{$page.url.pathname.includes("contact")}">Contact</a></li>
+            {#each links as link}
+            <li><a href={link.path} on:click={toggle} aria-current="{$page.url.pathname === link.path}">{link.name}</a></li>
+            {/each}
         </ul>
-    </div>
-    {:else}
-    <div>
+        {:else}
         <button on:click={toggle}><img src="/menu.svg" alt="Menu button" width=32></button>
+        {/if}
     </div>
-    {/if}
-    {#if menu}
-    <div class="mobile--menu">
+    {#if mobile && menu}
+    <div id="mobile">
         <ul>
-            <li class="mobile--menu_item"><a href="/" on:click={toggle} aria-current="{$page.url.pathname === "/"}">Home</a></li>
-            <li class="mobile--menu_item"><a href="teams" on:click={toggle} aria-current="{$page.url.pathname.includes("teams")}">Teams</a></li>
-            <li class="mobile--menu_item"><a href="execs" on:click={toggle} aria-current="{$page.url.pathname.includes("execs")}">Execs</a></li>
-            <li class="mobile--menu_item"><a href="sponsors" on:click={toggle} aria-current="{$page.url.pathname.includes("sponsors")}">Sponsors</a></li>
-            <li class="mobile--menu_item"><a href="contact" on:click={toggle} aria-current="{$page.url.pathname.includes("contact")}">Contact</a></li>
+            {#each links as link}
+            <li><a href={link.path} on:click={toggle} aria-current="{$page.url.pathname === link.path}">{link.name}</a></li>
+            {/each}
         </ul>
     </div>
     {/if}
@@ -57,6 +59,7 @@
         display: flex;
         height: 64px;
         padding: 0 48px;
+        z-index: 1;
     }
 
     header > :nth-child(1) {
@@ -81,7 +84,7 @@
     }
 
     li + li {
-        margin-left: 1rem;
+        margin-left: 16px;
     }
 
     ul {
@@ -98,7 +101,7 @@
         cursor: pointer;
     }
 
-    .mobile--menu {
+    #mobile {
         position: absolute;
         background-color: #fff;
         left: 0;
@@ -107,12 +110,12 @@
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .mobile--menu a {
+    #mobile a {
         display: block;
         font-size: 1.2em;
     }
 
-    .mobile--menu_item {
+    #mobile li {
         text-align: center;
         margin-left: 0;
         display: block;
