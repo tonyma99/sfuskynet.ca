@@ -1,5 +1,5 @@
 <script>
-    import { Container, PageCard, PageCardContainer } from "$lib/components";
+    import { Container, PageCard, PageCardContainer } from '$lib/components'
     export let data
 </script>
 
@@ -51,16 +51,6 @@
 </Container>
 
 <style>
-    @font-face {
-        font-family: 'Helvetica Now Display';
-        src: local('Helvetica Now Display Ext Blk'), local('Helvetica-Now-Display-Ext-Blk'),
-            url('webfonts/HelveticaNowDisplay-ExtBlk/HelveticaNowDisplay-ExtBlk.woff2') format('woff2'),
-            url('webfonts/HelveticaNowDisplay-ExtBlk/HelveticaNowDisplay-ExtBlk.woff') format('woff'),
-            url('webfonts/HelveticaNowDisplay-ExtBlk/HelveticaNowDisplay-ExtBlk.ttf') format('truetype');
-        font-weight: 900;
-        font-style: normal;
-    }
-
     section#heading div {
         height: 70vh;
         max-height: 1024px;
