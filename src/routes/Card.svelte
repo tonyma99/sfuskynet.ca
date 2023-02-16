@@ -4,7 +4,10 @@
     export let page;
 </script>
 
-<div>
+<div style="cursor:pointer"
+    on:click={() => { window.location.href = page }}
+    on:keypress={() => { window.location.href = page }}
+>
     <h3>{heading}</h3>
     <p>{description}</p>
     <a href={page}>Visit</a>
@@ -13,6 +16,7 @@
 <style>
     div {
         display: flex;
+        width: 100%;
         flex-direction: column;
         flex-basis: 100%;
         background-color: #eee;
@@ -20,6 +24,10 @@
         margin: 0 1rem;
         font-size: 1rem;
         border-radius: 0.5rem;
+    }
+
+    div:hover {
+        background-color: #e3e3e3;
     }
 
     h3 {
