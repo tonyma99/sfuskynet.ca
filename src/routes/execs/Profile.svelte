@@ -6,7 +6,7 @@
 </script>
 
 <div>
-    <img class="profile--photo" src={profile} alt="{name}'s profile picture">
+    <img src={profile} alt="{name}'s profile picture">
     <p>{name}</p>
     <p>{position}</p>
     <a href="{linkedin}"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -38,6 +38,7 @@
     
     p:nth-of-type(2) {
         font-size: 0.8rem;
+        color: #444;
     }
 
     i {
