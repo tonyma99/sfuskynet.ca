@@ -9,7 +9,7 @@
         },
         {
             heading: 'Sponsors',
-            description: 'Fueling our mission, powering our growth - Our Sponsors',
+            description: 'Fueling ',
             page: '/sponsors',
         },
         {
