@@ -2,7 +2,7 @@
     import { Container, PageHeading } from '$lib/components'
     export let headingText
     export let titleText = headingText
-    export let description
+    export let description = ''
 </script>
 
 <svelte:head>

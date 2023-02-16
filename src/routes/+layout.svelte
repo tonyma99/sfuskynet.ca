@@ -3,7 +3,7 @@
     import { Header, Footer } from '$lib/components'
 </script>
 
-<div style="display: contents">
+<div>
 	<Header />
 	<main>
 		<slot />
