@@ -1,5 +1,5 @@
 <footer>
-    <img src="/logo.png" alt="SFU Robot Socccer Club team logo" width=42>
+    <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width=42>
     <a href="contact">Contact Us</a>
     <a href="https://go.sfss.ca/clubs/721/info">Join Us</a>
     <p>SFU Robot Soccer</p>

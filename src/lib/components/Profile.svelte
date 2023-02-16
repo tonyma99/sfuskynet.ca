@@ -1,7 +1,7 @@
 <script>
     export let name;
     export let position;
-    export let profile = '/default_profile.png';
+    export let profile = '/images/default_profile.png';
     export let linkedin;
 </script>
 
@@ -32,12 +32,11 @@
     }
 
     p:nth-of-type(1) {
-        font-size: 1rem;
         font-weight: 600;
     }
     
     p:nth-of-type(2) {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: #444;
     }
 

@@ -27,7 +27,7 @@
 <header>
     <div>
         <a href="/">
-            <img src="/logo.png" alt="SFU Robot Socccer Club team logo" width=42>
+            <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width=42>
         </a>
     </div>
     <div>

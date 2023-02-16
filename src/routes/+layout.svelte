@@ -3,6 +3,11 @@
     import { Header, Footer } from '$lib/components'
 </script>
 
+<svelte:head>
+	<link href="/fontawesome.min.css" rel="stylesheet">
+    <link href="/brands.min.css" rel="stylesheet">
+</svelte:head>
+
 <div>
 	<Header />
 	<main>
