@@ -1,82 +1,6 @@
 <script>
-    import Profile from "./Profile.svelte";
-
-    const execs = [
-        {
-            name: 'Zach Spencer',
-            position: 'President',
-            profile: '/zach_spencer.jpeg',
-            linkedin: 'https://www.linkedin.com/in/zachary-k-spencer/',
-        },
-        {
-            name: 'Seyed Arad Shojaee',
-            position: 'VP of Member Experience',
-            profile: '/seyed_arad_shojaee.jpeg',
-            linkedin: 'https://www.linkedin.com/in/seyed-arad-shojaee-a8a175222/',
-        },
-        {
-            name: 'Thomas Challis',
-            position: 'VP of Public Relations',
-            profile: '/thomas_challis.jpeg',
-            linkedin: 'https://www.linkedin.com/in/thomas-challis-36460b1ba/',
-        },
-        {
-            name: 'Yu-Xing Lim',
-            position: 'VP of Administration',
-            profile: '/yu_xing_lim.jpeg',
-            linkedin: 'https://www.linkedin.com/in/yu-xing-lim-10706b252/',
-        },
-        {
-            name: 'Adam Spelrem',
-            position: 'VP of Finance',
-            profile: '/adam_spelrem.jpeg',
-            linkedin: 'https://www.linkedin.com/in/adam-spelrem-8b5059256/',
-        },
-    ];
-
-    const directors = [
-        {
-            name: 'Ara Christie',
-            position: 'Director of Graphic Design',
-            linkedin: 'https://www.linkedin.com/in/ara-christie-8a0404261',
-        },
-        {
-            name: 'Matin Keivanloo',
-            position: 'Director of Outreach',
-            profile: '/martin.jpg',
-            linkedin: 'https://www.linkedin.com/in/matin-keivanloo-2152a0204',
-        },
-    ]
-
-    const leads = [
-        {
-            name: 'Matthew do Santos-Zounon',
-            position: 'Software Team Lead',
-            profile: '/matthew.jpeg',
-            linkedin: 'https://www.linkedin.com/in/mdsz/',
-        },
-        {
-            name: 'Arvin Amini',
-            position: 'Mechanics Team Leader',
-            profile: '/arvin.jpeg',
-            linkedin: 'https://www.linkedin.com/in/arvin-amini/',
-        },
-        {
-            name: 'Judd Foster',
-            position: 'Electronics Team Leader',
-            profile: '/judd.jpeg',
-            linkedin: 'https://www.linkedin.com/in/judd-foster-568963193/',
-        },
-    ]
-
-    const heads = [
-        {
-            name: 'Vlad Nadtochii',
-            position: 'Head of Software Development',
-            profile: 'vlad.jpeg',
-            linkedin: 'https://www.linkedin.com/in/vlad-nadtochii-b451b5175/',
-        }
-    ]
+    import Profile from "./Profile.svelte"
+    export let data
 </script>
 
 <svelte:head>
@@ -91,28 +15,28 @@
 
     <div class="exec-team section--execs">
         <h3 id="executive-team">Executives</h3>
-        {#each execs as exec}
+        {#each data.people.execs as exec}
             <Profile name={exec.name} position={exec.position} profile={exec.profile} linkedin={exec.linkedin} email={exec.email} />
         {/each}
     </div>
     
     <div class="exec-team section--directors">
         <h3 id="director-team">Directors</h3>
-        {#each directors as exec}
+        {#each data.people.directors as exec}
             <Profile name={exec.name} position={exec.position} profile={exec.profile} linkedin={exec.linkedin} email={exec.email} />
         {/each}
     </div>
 
     <div class="exec-team section--leads">
         <h3 id="leads-team">Leads</h3>
-        {#each leads as exec}
+        {#each data.people.leads as exec}
             <Profile name={exec.name} position={exec.position} profile={exec.profile} linkedin={exec.linkedin} email={exec.email} />
         {/each}
     </div>
 
     <div class="exec-team section--heads">
         <h3 id="heads-team">Heads</h3>
-        {#each heads as exec}
+        {#each data.people.heads as exec}
             <Profile name={exec.name} position={exec.position} profile={exec.profile} linkedin={exec.linkedin} email={exec.email} />
         {/each}
     </div>
