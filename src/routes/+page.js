@@ -12,7 +12,7 @@ const cards = [
     },
     {
         heading: 'Execs',
-        description: 'Execs',
+        description: 'Our Executive Team',
         page: '/execs',
     },
     {

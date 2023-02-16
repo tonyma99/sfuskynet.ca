@@ -8,28 +8,28 @@
     headingText='Executive Team'
 >
     <div>
-        <h3>Executives</h3>
+        <h2>Executives</h2>
         {#each data.people.execs as exec}
         <Profile name={exec.name} position={exec.position} profile={exec.profile} linkedin={exec.linkedin} />
         {/each}
     </div>
     
     <div>
-        <h3>Directors</h3>
+        <h2>Directors</h2>
         {#each data.people.directors as exec}
         <Profile name={exec.name} position={exec.position} profile={exec.profile} linkedin={exec.linkedin} />
         {/each}
     </div>
 
     <div>
-        <h3>Leads</h3>
+        <h2>Leads</h2>
         {#each data.people.leads as exec}
         <Profile name={exec.name} position={exec.position} profile={exec.profile} linkedin={exec.linkedin} />
         {/each}
     </div>
 
     <div>
-        <h3>Heads</h3>
+        <h2>Heads</h2>
         {#each data.people.heads as exec}
         <Profile name={exec.name} position={exec.position} profile={exec.profile} linkedin={exec.linkedin} />
         {/each}

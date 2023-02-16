@@ -26,7 +26,7 @@
     </section>
 
     <section id="about">
-        <h3>About SFU Robot Soccer</h3>
+        <h2>About SFU Robot Soccer</h2>
         <p>Welcome to the Simon Fraser University Robot Soccer Club! Our club is dedicated to promoting an interest in robotics and soccer among students by combining the knowledge of software, electronics, and mechanics.<br>
             <br>    
             We believe that robotics and soccer are a perfect match - both require teamwork, strategy, and problem-solving. Our club members learn about robotics and programming by building and programming robots to compete in robot soccer matches against other schools.<br>
@@ -42,7 +42,7 @@
     </section>
 
     <section id="join">
-        <h3>Join Us!</h3>
+        <h2>Join Us!</h2>
         <p>Are you interested in robotics and soccer? Do you want to be part of a winning team? Then come and join us at the Simon Fraser University Robot Soccer Club! We are always looking for new members to join our software, electronics, and mechanics teams. We provide training and resources to help our members learn and improve, and we participate in various local, regional, and national robotics competitions and events throughout the year. Join us today and experience the excitement of building and programming robots to compete in robot soccer matches!</p>
         <div>
             <a href="https://go.sfss.ca/clubs/721/info">Join Us</a>
