@@ -7,6 +7,7 @@
 	<meta name="description" content="The official website for the SFU Robot Soccer club.">
 	<link href="/fontawesome.min.css" rel="stylesheet">
     <link href="/brands.min.css" rel="stylesheet">
+	<link href="/solid.min.css" rel="stylesheet">
 	<link href="/fonts.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
