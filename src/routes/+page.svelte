@@ -7,15 +7,15 @@
     <title>SFU Robot Soccer</title>
 </svelte:head>
 
-<section id="heading">
-    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background.webp');">
-        <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width=128 height=128>
-        <h1>SFU Robot Soccer</h1>
-        <p>Build a legacy and tradition of extracurricular innovation and engineering engagement.</p>
-    </div>
-</section>
-
 <Container>
+    <section id="heading">
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background.webp');">
+            <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width=128 height=128>
+            <h1>SFU Robot Soccer</h1>
+            <p>Build a legacy and tradition of extracurricular innovation and engineering engagement.</p>
+        </div>
+    </section>
+
     <section id="cards">
         <p>SFU's first Robot Soccer club aims to combine the excitement of soccer with the future of automated technology as we compete in RoboCup Soccer competitions. Our team encourages students from all programs to come together and learn concepts that are not taught in class and get hands-on experience with robotics, artificial intelligence, and teamwork.</p>    
         <PageCardContainer>
@@ -52,6 +52,12 @@
 
 <style>
     section#heading div {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
         height: 70vh;
         max-height: 1024px;
         background-size: cover;
@@ -85,6 +91,10 @@
         padding: 0 1rem;
         line-height: 1;
         max-width: 64rem;
+    }
+
+    section#cards p {
+        margin-bottom: 2rem;
     }
 
     section#join div {
@@ -125,7 +135,7 @@
 
     @media only screen and (min-width: 769px) {
         section#cards p {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
     }
 </style>

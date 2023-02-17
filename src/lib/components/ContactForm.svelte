@@ -41,6 +41,9 @@
 
 <style>
     form {
+        display: flex;
+        gap: 6px;
+        flex-direction: column;
         max-width: 576px;
         margin: auto;
     }
@@ -49,7 +52,6 @@
         background-color: #fafafa;
         width: 100%;
         padding: 6px 12px;
-        margin-bottom: 8px;
         border-radius: 0.5em;
         border: 1px solid #d0d0d0;
         font-family: 'IBM Plex Sans', sans-serif;
@@ -61,10 +63,8 @@
         background-color: #a6192e;
         border: none;
         color: #f0f0f0;
-        display: block;
-        font-size: 1.1rem;
         font-weight: bold;
-        padding: 10px;
+        padding: 8px;
     }
 
     form button:hover {
@@ -81,14 +81,10 @@
 
     form textarea {
         height: 192px;
-        min-height: 35px;
+        resize: none;
     }
 
     p {
         color: var(alertColor)
-    }
-
-    textarea {
-        resize: vertical;
     }
 </style>

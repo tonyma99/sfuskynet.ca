@@ -12,14 +12,14 @@
 		justify-content: center;
 		align-items: center;
 		padding: 1rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
 	}
 
     a {
         transition: 0.3s;
         align-items: center;
         display: flex;
-        gap: 4px;
+        gap: 6px;
     }
 
     a:hover {
@@ -33,7 +33,7 @@
     }
 
     i {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     img {
