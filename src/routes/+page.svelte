@@ -70,11 +70,13 @@
         font-family: 'Helvetica Now Display', sans-serif;
         font-weight: 900;
         font-size: 4rem;
+        text-shadow: 0px 1.5px 0px #1a1a1a;
     }
 
     section#heading p {
         font-size: 1.3rem;
         margin-top: 1rem;
+        text-shadow: 0px 1px 0px #1a1a1a;
     }
 
     section#heading h1, section#heading p {
@@ -83,7 +85,6 @@
         padding: 0 1rem;
         line-height: 1;
         max-width: 64rem;
-        text-shadow: 0px 2px 0px #1a1a1a;
     }
 
     section#join div {

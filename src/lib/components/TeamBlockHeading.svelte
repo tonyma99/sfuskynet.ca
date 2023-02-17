@@ -23,15 +23,16 @@
         font-family: 'Helvetica Now Display', sans-serif;
         font-size: 3em;
         margin: 0;
+        text-shadow: 0px 1.5px 0px #1a1a1a;
     }
 
     p {
+        text-shadow: 0px 1px 0px #1a1a1a;
         font-size: 1.1rem;
         margin: 0;
     }
 
     h2, p {
-        text-shadow: 0px 2px 0px #222;
         color: #fafafa;
     }
 
