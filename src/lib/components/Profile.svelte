@@ -6,10 +6,10 @@
 </script>
 
 <div>
-    <img src={profile} alt="{name}'s profile picture">
+    <img src={profile} alt="{name}'s profile picture" width=128 height=128>
     <p>{name}</p>
     <p>{position}</p>
-    <a href="{linkedin}"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href={linkedin} aria-label={`${name}'s LinkedIn profile'`}><i class="fa-brands fa-linkedin-in"></i></a>
 </div>
 
 <style>
@@ -22,7 +22,6 @@
 
     img {
         border-radius: 50%;
-        width: 80%;
     }
 
     p {
