@@ -22,7 +22,7 @@
     }
 
     h2 {
-        font-family: 'Helvetica Now Display';
+        font-family: 'Helvetica Now Display', sans-serif;
         text-transform: uppercase;
         color: #fafafa;
         font-size: 3em;

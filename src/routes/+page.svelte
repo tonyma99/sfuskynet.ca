@@ -67,14 +67,13 @@
     }
     
     section#heading h1 {
-        font-family: 'Helvetica Now Display';
+        font-family: 'Helvetica Now Display', sans-serif;
         font-weight: 900;
         font-size: 4rem;
         text-transform: uppercase;
     }
 
     section#heading p {
-        font-family: 'IBM Plex Sans';
         font-size: 1.3rem;
         margin-top: 1rem;
     }
