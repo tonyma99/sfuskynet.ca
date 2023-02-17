@@ -15,7 +15,6 @@
 <style>
     div {
         display: inline-block;
-        margin: 0.5rem;
         width: 10rem;
         vertical-align: top;
     }
