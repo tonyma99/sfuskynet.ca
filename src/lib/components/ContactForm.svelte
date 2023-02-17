@@ -1,9 +1,11 @@
 <script>
     let success = false
     let alert = false
+    let disabled = false
     let color;
     $: alert ? color = '#376e37' : color = '#a6192e'
     async function handleSubmit(e) {
+        disabled = true
         const formData = new FormData(e.target)
         e.target.reset()
         const result = await fetch("/api/message", {
@@ -15,9 +17,16 @@
         })
         if (result.status === 200) success = true
         alert = true
+        disabled = false
     }
 </script>
 
+<form on:submit|preventDefault={handleSubmit}>
+    <input name="name" type="text" placeholder="Full name" required>
+    <input name="email" type="email" placeholder="Email" required>
+    <textarea name="message" type="text" placeholder="Message" required />
+    <button disabled={disabled}>Submit</button>
+</form>
 {#if alert}
 <div>
     <p style:color>
@@ -29,12 +38,6 @@
     </p>
 </div>
 {/if}
-<form on:submit|preventDefault={handleSubmit}>
-    <input name="name" type="text" placeholder="Full name" required>
-    <input name="email" type="email" placeholder="Email" required>
-    <textarea name="message" type="text" placeholder="Message" required />
-    <button>Submit</button>
-</form>
 
 <style>
     form {
@@ -64,6 +67,14 @@
 
     form button:hover {
         background-color: #cc0633;
+    }
+
+    form button:disabled {
+        background-color: #999;
+    }
+
+    form button:focus, form button:active {
+        background-color: #a6192e;
     }
 
     form textarea {

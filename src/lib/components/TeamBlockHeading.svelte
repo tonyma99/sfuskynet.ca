@@ -15,7 +15,7 @@
         overflow: hidden;
         color: white;
         background-size: contain;
-        border-radius: 0.5rem;
+        border-radius: 0.25rem;
         width: 100%;
         aspect-ratio: 18/7;
         color: white;
@@ -36,6 +36,16 @@
     }
 
     @media only screen and (max-width: 768px) {
+        div {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            border-radius: 0;
+        }
+        
         h2 {
             font-size: 2em;
         }
