@@ -3,12 +3,12 @@
 </script>
 
 <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({team.image});">
-    <h3>{team.name}</h3>
+    <h2>{team.name}</h2>
     <p>{team.headline}</p>
 </div>
 
 <style>
-   div {
+    div {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -21,23 +21,22 @@
         color: white;
     }
 
-    h3 {
+    h2 {
+        font-family: 'Helvetica Now Display';
+        text-transform: uppercase;
         color: #fafafa;
-        font-weight: 700;
         font-size: 3em;
         margin: 0;
     }
 
     p {
         color: #fafafa;
-        font-size: 1.2em;
-        font-weight: 500;
+        font-size: 1.1rem;
         margin: 0;
     }
 
     @media only screen and (max-width: 768px) {
-        h3 {
-            font-weight: 500;
+        h2 {
             font-size: 2em;
         }
         p {

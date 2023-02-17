@@ -1,5 +1,5 @@
 <footer>
-    <img src="/logo.png" alt="SFU Robot Socccer Club team logo" width=42>
+    <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width=42 height=42>
     <a href="contact">Contact Us</a>
     <a href="https://go.sfss.ca/clubs/721/info">Join Us</a>
     <p>SFU Robot Soccer</p>
@@ -15,17 +15,11 @@
         margin-top: 3rem;
 	}
 
-    footer a {
-        color: #777;
+    a, p {
+        padding: 0.25rem;
+        color: #222;
+        margin: 0;
     }
-
-    footer p {
-        color: #555;
-    }
-
-    footer a, footer p {
-		margin: 0;
-	}
 
     img {
         margin: 0.5rem 0;

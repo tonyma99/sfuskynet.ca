@@ -11,7 +11,7 @@
         We appreciate their support and encourage our audience to support these sponsors in return.
     `}
 >
-    <h3>Gold Sponsors</h3>
+    <h2>Gold Sponsors</h2>
     <div>
         {#each data.sponsors as sponsor}
         <a href="{sponsor.website}"><img src={sponsor.logo} alt="{sponsor.name} logo" width=256></a>

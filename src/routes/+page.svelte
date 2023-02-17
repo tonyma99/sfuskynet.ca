@@ -1,5 +1,5 @@
 <script>
-    import { Container, PageCard, PageCardContainer } from "$lib/components";
+    import { Container, PageCard, PageCardContainer } from '$lib/components'
     export let data
 </script>
 
@@ -8,8 +8,8 @@
 </svelte:head>
 
 <section id="heading">
-    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/background.jpg');">
-        <img src="/logo.png" alt="SFU Robot Socccer Club team logo">
+    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/background.webp');">
+        <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width=128 height=128>
         <h1>SFU Robot Soccer</h1>
         <p>Build a legacy and tradition of extracurricular innovation and engineering engagement.</p>
     </div>
@@ -26,7 +26,7 @@
     </section>
 
     <section id="about">
-        <h3>About SFU Robot Soccer</h3>
+        <h2>About SFU Robot Soccer</h2>
         <p>Welcome to the Simon Fraser University Robot Soccer Club! Our club is dedicated to promoting an interest in robotics and soccer among students by combining the knowledge of software, electronics, and mechanics.<br>
             <br>    
             We believe that robotics and soccer are a perfect match - both require teamwork, strategy, and problem-solving. Our club members learn about robotics and programming by building and programming robots to compete in robot soccer matches against other schools.<br>
@@ -42,7 +42,7 @@
     </section>
 
     <section id="join">
-        <h3>Join Us!</h3>
+        <h2>Join Us!</h2>
         <p>Are you interested in robotics and soccer? Do you want to be part of a winning team? Then come and join us at the Simon Fraser University Robot Soccer Club! We are always looking for new members to join our software, electronics, and mechanics teams. We provide training and resources to help our members learn and improve, and we participate in various local, regional, and national robotics competitions and events throughout the year. Join us today and experience the excitement of building and programming robots to compete in robot soccer matches!</p>
         <div>
             <a href="https://go.sfss.ca/clubs/721/info">Join Us</a>
@@ -51,10 +51,7 @@
 </Container>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-   section#heading div {
+    section#heading div {
         height: 70vh;
         max-height: 1024px;
         background-size: cover;
@@ -70,13 +67,14 @@
     }
     
     section#heading h1 {
-        font-family: 'Archivo Black', sans-serif;
+        font-family: 'Helvetica Now Display';
+        font-weight: 900;
         font-size: 4rem;
         text-transform: uppercase;
     }
 
     section#heading p {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'IBM Plex Sans';
         font-size: 1.3rem;
         margin-top: 1rem;
     }
@@ -95,7 +93,7 @@
 
     section#join a {
         color: white;
-        font-weight: 500;
+        font-weight: bold;
         padding: 0.5em 1em;
         border-radius: 0.5em;
     }

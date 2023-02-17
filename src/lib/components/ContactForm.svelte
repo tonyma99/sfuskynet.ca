@@ -58,7 +58,7 @@
         color: #f8f8f8;
         display: block;
         font-size: 1.1rem;
-        font-weight: 500;
+        font-weight: bold;
         padding: 10px;
     }
 

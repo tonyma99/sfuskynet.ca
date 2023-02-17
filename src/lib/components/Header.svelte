@@ -27,7 +27,7 @@
 <header>
     <div>
         <a href="/">
-            <img src="/logo.png" alt="SFU Robot Socccer Club team logo" width=42>
+            <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width=42 height=42>
         </a>
     </div>
     <div>
@@ -38,7 +38,7 @@
             {/each}
         </ul>
         {:else}
-        <button on:click={toggle}><img src="/menu.svg" alt="Menu button" width=32></button>
+        <button on:click={toggle}><img src="/menu.svg" alt="Menu button" width=32 height=32></button>
         {/if}
     </div>
     {#if mobile && menu}

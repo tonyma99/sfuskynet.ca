@@ -1,15 +1,15 @@
 <script>
     export let name;
     export let position;
-    export let profile = '/default_profile.png';
+    export let profile = '/images/default_profile.png';
     export let linkedin;
 </script>
 
 <div>
-    <img src={profile} alt="{name}'s profile picture">
+    <img src={profile} alt="{name}'s profile picture" width=128 height=128>
     <p>{name}</p>
     <p>{position}</p>
-    <a href="{linkedin}"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href={linkedin} aria-label={`${name}'s LinkedIn profile'`}><i class="fa-brands fa-linkedin-in"></i></a>
 </div>
 
 <style>
@@ -22,7 +22,6 @@
 
     img {
         border-radius: 50%;
-        width: 80%;
     }
 
     p {
@@ -32,12 +31,11 @@
     }
 
     p:nth-of-type(1) {
-        font-size: 1rem;
-        font-weight: 600;
+        font-weight: bold;
     }
     
     p:nth-of-type(2) {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: #444;
     }
 
