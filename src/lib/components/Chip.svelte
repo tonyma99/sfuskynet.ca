@@ -7,7 +7,7 @@
         font-weight: 300;
         background-color: #a6192e;;
         border-radius: 2em;
-        color: #f8f8f8;
+        color: #fafafa;
         display: inline-flex;
         font-size: 0.8em;
         line-height: normal;

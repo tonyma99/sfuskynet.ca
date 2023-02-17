@@ -8,7 +8,7 @@
 </svelte:head>
 
 <section id="heading">
-    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/background.webp');">
+    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background.webp');">
         <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width=128 height=128>
         <h1>SFU Robot Soccer</h1>
         <p>Build a legacy and tradition of extracurricular innovation and engineering engagement.</p>
@@ -70,7 +70,6 @@
         font-family: 'Helvetica Now Display', sans-serif;
         font-weight: 900;
         font-size: 4rem;
-        text-transform: uppercase;
     }
 
     section#heading p {
@@ -84,6 +83,7 @@
         padding: 0 1rem;
         line-height: 1;
         max-width: 64rem;
+        text-shadow: 0px 2px 0px #1a1a1a;
     }
 
     section#join div {
@@ -91,14 +91,10 @@
     }
 
     section#join a {
-        color: white;
+        color: #f8f8f8;
         font-weight: bold;
         padding: 0.5em 1em;
         border-radius: 0.5em;
-    }
-
-    section#join a {
-        color: #f8f8f8;
         background-color: #a6192e;
     }
 

@@ -2,7 +2,7 @@
     export let team
 </script>
 
-<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({team.image});">
+<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({team.image});">
     <h2>{team.name}</h2>
     <p>{team.headline}</p>
 </div>
@@ -13,26 +13,26 @@
         justify-content: center;
         flex-direction: column;
         overflow: hidden;
-        color: white;
         background-size: contain;
         border-radius: 0.25rem;
         width: 100%;
         aspect-ratio: 18/7;
-        color: white;
     }
 
     h2 {
         font-family: 'Helvetica Now Display', sans-serif;
-        text-transform: uppercase;
-        color: #fafafa;
         font-size: 3em;
         margin: 0;
     }
 
     p {
-        color: #fafafa;
         font-size: 1.1rem;
         margin: 0;
+    }
+
+    h2, p {
+        text-shadow: 0px 2px 0px #222;
+        color: #fafafa;
     }
 
     @media only screen and (max-width: 768px) {

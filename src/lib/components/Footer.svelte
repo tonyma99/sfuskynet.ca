@@ -17,7 +17,7 @@
 
     a, p {
         padding: 0.25rem;
-        color: #222;
+        color: #1a1a1a;
         margin: 0;
     }
 
