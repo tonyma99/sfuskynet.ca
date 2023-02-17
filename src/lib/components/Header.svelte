@@ -36,7 +36,7 @@
             {/each}
         </ul>
         {:else}
-        <button on:click={toggle}><img src="/menu.svg" alt="Menu button" width=32 height=32></button>
+        <span on:click={toggle} on:keypress={toggle}><img src="/menu.svg" alt="Menu button" width=32 height=32></span>
         {/if}
     </div>
     {/if}
@@ -91,13 +91,14 @@
         padding-left: 0;
     }
 
-    button {
+    span {
         background: none;
         border: none;
+        padding: 0.5rem;
     }
 
-    button:hover {
-        cursor: pointer;
+    span img {
+        vertical-align: middle;
     }
 
     #mobile {
