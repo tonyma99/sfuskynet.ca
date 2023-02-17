@@ -46,19 +46,21 @@
     }
 
     form > * {
+        background-color: #fafafa;
         width: 100%;
         padding: 6px 12px;
         margin-bottom: 8px;
         border-radius: 0.5em;
-        border: 1px solid #bbb;
+        border: 1px solid #d0d0d0;
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 1rem;
     }
 
     form button {
+        transition: 0.3s;
         background-color: #a6192e;
         border: none;
-        color: #f8f8f8;
+        color: #f0f0f0;
         display: block;
         font-size: 1.1rem;
         font-weight: bold;

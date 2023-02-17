@@ -54,7 +54,6 @@
 <style>
     header {
         align-items: center;
-        background-color: white;
         display: flex;
         height: 64px;
         padding: 0 48px;
@@ -74,9 +73,12 @@
         justify-content: flex-end;
     }
 
+    a {
+        transition: 0.3s;
+    }
+
     a:hover {
-        color: cornflowerblue;
-        text-decoration: underline;
+        color: #777;
     }
 
     li {
@@ -104,11 +106,12 @@
 
     #mobile {
         position: absolute;
-        background-color: #fff;
+        background-color: #f8f8f8;
         left: 0;
         top: 64px;
         width: 100%;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        background-color: #f0f0f0;
     }
 
     #mobile a {

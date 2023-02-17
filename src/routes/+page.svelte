@@ -45,7 +45,7 @@
         <h2>Join Us!</h2>
         <p>Are you interested in robotics and soccer? Do you want to be part of a winning team? Then come and join us at the Simon Fraser University Robot Soccer Club! We are always looking for new members to join our software, electronics, and mechanics teams. We provide training and resources to help our members learn and improve, and we participate in various local, regional, and national robotics competitions and events throughout the year. Join us today and experience the excitement of building and programming robots to compete in robot soccer matches!</p>
         <div>
-            <a href="https://go.sfss.ca/clubs/721/info">Join Us</a>
+            <a href="https://go.sfss.ca/clubs/721/info">Join Us <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.85rem; margin-left: 4px;"></i></a>
         </div>
     </section>
 </Container>
@@ -70,17 +70,17 @@
         font-family: 'Helvetica Now Display', sans-serif;
         font-weight: 900;
         font-size: 4rem;
-        text-shadow: 0px 1.5px 0px #1a1a1a;
+        text-shadow: 0px 1.5px 0px #1f1f1f;
     }
 
     section#heading p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-top: 1rem;
-        text-shadow: 0px 1px 0px #1a1a1a;
+        text-shadow: 0px 1px 0px #1f1f1f;
     }
 
     section#heading h1, section#heading p {
-        color: #f8f8f8;
+        color: #f0f0f0;
         margin: 0 auto;
         padding: 0 1rem;
         line-height: 1;
@@ -92,9 +92,13 @@
     }
 
     section#join a {
-        color: #f8f8f8;
+        transition: 0.3s;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        color: #f0f0f0;
         font-weight: bold;
-        padding: 0.5em 1em;
+        padding: 0.5rem 1rem;
         border-radius: 0.5em;
         background-color: #a6192e;
     }
@@ -109,12 +113,12 @@
 
     @media only screen and (max-width: 768px) {
         section#heading h1 {
-            font-size: 3em;
+            font-size: 3rem;
             line-height: 1;
         }
 
         section#heading p {
-            font-size: 1.2em;
+            font-size: 1rem;
             line-height: 1.2;
         }
     }

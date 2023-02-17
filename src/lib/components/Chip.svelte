@@ -4,10 +4,9 @@
 
 <style>
     span {
-        font-weight: 300;
         background-color: #a6192e;;
         border-radius: 2em;
-        color: #fafafa;
+        color: #f0f0f0;
         display: inline-flex;
         font-size: 0.8em;
         line-height: normal;

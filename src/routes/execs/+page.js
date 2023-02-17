@@ -60,13 +60,13 @@ const leads = [
     },
     {
         name: 'Arvin Amini',
-        position: 'Mechanics Team Leader',
+        position: 'Mechanics Team Lead',
         profile: '/images/arvin.webp',
         linkedin: 'https://www.linkedin.com/in/arvin-amini/',
     },
     {
         name: 'Judd Foster',
-        position: 'Electronics Team Leader',
+        position: 'Electronics Team Lead',
         profile: '/images/judd.webp',
         linkedin: 'https://www.linkedin.com/in/judd-foster-568963193/',
     },

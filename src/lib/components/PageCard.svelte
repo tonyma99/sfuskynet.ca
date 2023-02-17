@@ -15,11 +15,12 @@
 
 <style>
     a {
+        transition: 0.3s;
         font-weight: bold;
         margin-top: auto;
         align-self: center;
         background-color: #a6192e;
-        color: #f8f8f8;
+        color: #f0f0f0;
         padding: 6px 12px;
         border-radius: 0.5rem;
     }
@@ -29,11 +30,12 @@
     }
     
     div {
+        transition: 0.3s;
         display: flex;
         width: 100%;
         flex-direction: column;
         flex-basis: 100%;
-        background-color: #eee;
+        background-color: #e0e0e0;
         padding: 1.5em;
         margin: 0 1rem;
         font-size: 1rem;
@@ -41,7 +43,7 @@
     }
 
     div:hover {
-        background-color: #e3e3e3;
+        background-color: #d8d8d8;
     }
 
     p:first-of-type {

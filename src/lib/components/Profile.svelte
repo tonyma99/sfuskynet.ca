@@ -14,19 +14,22 @@
 
 <style>
     div {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
         width: 10rem;
-        vertical-align: top;
+        gap: 6px;
     }
 
     img {
         border-radius: 50%;
+        margin-bottom: 6px;
     }
 
     p {
         line-height: 1;
         margin: 0;
-        margin-top: 6px;
     }
 
     p:nth-of-type(1) {
@@ -36,13 +39,5 @@
     p:nth-of-type(2) {
         font-size: 0.9rem;
         color: #444;
-    }
-
-    i {
-        font-size: 0.9rem;
-    }
-
-    i:hover {
-        color: #777;
     }
 </style>
