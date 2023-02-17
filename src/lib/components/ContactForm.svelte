@@ -1,11 +1,11 @@
 <script>
     let success = false
     let alert = false
-    let waiting = false
+    let disabled = false
     let color;
     $: alert ? color = '#376e37' : color = '#a6192e'
     async function handleSubmit(e) {
-        waiting = true
+        disabled = true
         const formData = new FormData(e.target)
         e.target.reset()
         const result = await fetch("/api/message", {
@@ -17,7 +17,7 @@
         })
         if (result.status === 200) success = true
         alert = true
-        waiting = false
+        disabled = false
     }
 </script>
 
@@ -25,13 +25,7 @@
     <input name="name" type="text" placeholder="Full name" required>
     <input name="email" type="email" placeholder="Email" required>
     <textarea name="message" type="text" placeholder="Message" required />
-    <button disabled={waiting}>
-        {#if !waiting}
-        Submit
-        {:else if waiting}
-        <i class="fa-solid fa-circle-notch"></i>
-        {/if}
-    </button>
+    <button disabled={disabled}>Submit</button>
 </form>
 {#if alert}
 <div>
@@ -79,27 +73,13 @@
         background-color: #999;
     }
 
+    form button:focus, form button:active {
+        background-color: #a6192e;
+    }
+
     form textarea {
         height: 192px;
         min-height: 35px;
-    }
-
-    @keyframes rotate {
-        from { -webkit-transform: rotate(0deg) } 
-        to { -webkit-transform: rotate(360deg) } 
-    }
-
-    @-webkit-keyframes rotate {
-        from { -webkit-transform: rotate(0deg) } 
-        to { -webkit-transform: rotate(360deg) } 
-    }
-
-    i {
-        -webkit-animation: rotate 1s linear infinite;
-        -moz-animation: rotate 1s linear infinite;
-        -ms-animation: rotate 1s linear infinite;
-        -o-animation: rotate 1s linear infinite;
-        animation: rotate 1s linear infinite;
     }
 
     p {
