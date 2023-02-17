@@ -8,8 +8,8 @@
 </svelte:head>
 
 <section id="heading">
-    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/background.jpg');">
-        <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo">
+    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/background.webp');">
+        <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width=128 height=128>
         <h1>SFU Robot Soccer</h1>
         <p>Build a legacy and tradition of extracurricular innovation and engineering engagement.</p>
     </div>

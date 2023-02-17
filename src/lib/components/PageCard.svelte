@@ -8,7 +8,7 @@
     on:click={() => { window.location.href = page }}
     on:keypress={() => { window.location.href = page }}
 >
-    <h3>{heading}</h3>
+    <p>{heading}</p>
     <p>{description}</p>
     <a href={page}>Visit</a>
 </div>
@@ -44,7 +44,7 @@
         background-color: #e3e3e3;
     }
 
-    h3 {
+    p:first-of-type {
         font-weight: bold;
         font-size: 1.2rem;
         margin: 0;

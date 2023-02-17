@@ -7,12 +7,12 @@ export const load = () => {
 const sponsors = [
     {
         name: 'Altium',
-        logo: '/images/Altium.jpeg',
+        logo: '/images/Altium.webp',
         website: 'https://www.altium.com/',
     },
     {
         name: 'SolidWorks',
-        logo: '/images/SolidWorks.jpeg',
+        logo: '/images/SolidWorks.webp',
         website: 'https://www.solidworks.com/',
     },
 ];
