@@ -13,9 +13,10 @@
         justify-content: center;
         flex-direction: column;
         overflow: hidden;
-        background-size: contain;
+        background-size: cover;
         border-radius: 0.25rem;
         width: 100%;
+        max-height: 256px;
         aspect-ratio: 18/7;
     }
 
@@ -50,6 +51,7 @@
         h2 {
             font-size: 2em;
         }
+
         p {
             font-size: 1em;
             font-weight: normal;
