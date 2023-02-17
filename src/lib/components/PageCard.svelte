@@ -32,12 +32,12 @@
     div {
         transition: 0.3s;
         display: flex;
+        gap: 16px;
         width: 100%;
         flex-direction: column;
         flex-basis: 100%;
         background-color: #e0e0e0;
         padding: 1.5em;
-        margin: 0 1rem;
         font-size: 1rem;
         border-radius: 0.5rem;
     }
@@ -48,15 +48,11 @@
 
     p:first-of-type {
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 22px;
         margin: 0;
-
     }
 
-    @media only screen and (max-width: 768px) {
-        div {
-            display: inline-block;
-            margin: 1rem 0;
-        }
+    p:nth-of-type(2) {
+        margin: 0;
     }
 </style>

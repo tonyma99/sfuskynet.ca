@@ -16,8 +16,11 @@
         </div>
     </section>
 
-    <section id="cards">
+    <section>
         <p>SFU's first Robot Soccer club aims to combine the excitement of soccer with the future of automated technology as we compete in RoboCup Soccer competitions. Our team encourages students from all programs to come together and learn concepts that are not taught in class and get hands-on experience with robotics, artificial intelligence, and teamwork.</p>    
+    </section>
+
+    <section id="cards">
         <PageCardContainer>
             {#each data.cards as card} 
             <PageCard heading={card.heading} description={card.description} page={card.page} />
@@ -93,10 +96,6 @@
         max-width: 64rem;
     }
 
-    section#cards p {
-        margin-bottom: 2rem;
-    }
-
     section#join div {
         margin-top: 1.5em;
     }
@@ -130,12 +129,6 @@
         section#heading p {
             font-size: 1rem;
             line-height: 1.2;
-        }
-    }
-
-    @media only screen and (min-width: 769px) {
-        section#cards p {
-            margin-bottom: 3rem;
         }
     }
 </style>
