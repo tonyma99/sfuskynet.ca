@@ -121,4 +121,10 @@
             line-height: 1.2;
         }
     }
+
+    @media only screen and (min-width: 769px) {
+        section#cards p {
+            margin-bottom: 2rem;
+        }
+    }
 </style>

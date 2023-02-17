@@ -59,6 +59,7 @@
         height: 64px;
         padding: 0 48px;
         z-index: 1;
+        font-size: 1.05rem;
     }
 
     header > :nth-child(1) {
