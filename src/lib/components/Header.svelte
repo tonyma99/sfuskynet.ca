@@ -3,11 +3,8 @@
 
     let menu = false;
 
-    $: innerWidth = innerWidth;
-    $: mobile = innerWidth <= 768;
-    $: if (!mobile && menu || $navigating && menu) {
-        menu = false;
-    }
+    let innerWidth
+    $: if (innerWidth <= 768 || $navigating) menu = false
 
     function toggle() {
         menu = menu ? false : true;
@@ -30,8 +27,9 @@
             <img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width=42 height=42>
         </a>
     </div>
+    {#if innerWidth !== undefined}
     <div>
-        {#if !mobile} 
+        {#if innerWidth > 768} 
         <ul>
             {#each links as link}
             <li><a href={link.path} on:click={toggle} aria-current="{$page.url.pathname === link.path}">{link.name}</a></li>
@@ -41,7 +39,8 @@
         <button on:click={toggle}><img src="/menu.svg" alt="Menu button" width=32 height=32></button>
         {/if}
     </div>
-    {#if mobile && menu}
+    {/if}
+    {#if menu && innerWidth <= 768}
     <div id="mobile">
         <ul>
             {#each links as link}
