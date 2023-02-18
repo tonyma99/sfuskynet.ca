@@ -36,7 +36,13 @@
             {/each}
         </ul>
         {:else}
-        <span on:click={toggle} on:keypress={toggle}><img src="/menu.svg" alt="Menu button" width=32 height=32></span>
+        <span on:click={toggle} on:keypress={toggle}>
+            {#if !menu}
+            <i class="fa-solid fa-bars fa-lg"></i>
+            {:else}
+            <i class="fa-solid fa-xmark fa-lg"></i>
+            {/if}
+        </span>
         {/if}
     </div>
     {/if}
@@ -100,8 +106,9 @@
         padding: 0.5rem;
     }
 
-    span img {
+    span i {
         vertical-align: middle;
+        padding: 6px;
     }
 
     #mobile {
