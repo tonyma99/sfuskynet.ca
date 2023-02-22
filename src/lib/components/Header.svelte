@@ -96,8 +96,13 @@
   }
 
   span {
-    padding: 0.5rem;
+    padding: 0.25rem;
     font-size: 36px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
   }
 
   #mobile {
