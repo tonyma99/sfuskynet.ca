@@ -1,9 +1,8 @@
-<script>
+<script lang="ts">
   import { navigating, page } from '$app/stores'
 
   let menu = false
-
-  let innerWidth
+  let innerWidth: number
   $: if (innerWidth <= 768 || $navigating) menu = false
 
   function toggle() {
@@ -46,9 +45,7 @@
     <div id="mobile">
       <ul>
         {#each links as link}
-          <li>
-            <a href={link.path} on:click={toggle} aria-current={$page.url.pathname === link.path}>{link.name}</a>
-          </li>
+          <li><a href={link.path} on:click={toggle} aria-current={$page.url.pathname === link.path}>{link.name}</a></li>
         {/each}
       </ul>
     </div>
