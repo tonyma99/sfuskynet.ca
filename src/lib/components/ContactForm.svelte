@@ -3,7 +3,7 @@
 	let alert = false
 	let disabled = false
 	let color: string
-	$: alert ? (color = '#376e37') : (color = '#a6192e')
+	$: success ? (color = '#376e37') : (color = '#a6192e')
 
 	const handleSubmit = async (event: Event) => {
 		disabled = true
@@ -51,11 +51,11 @@
 	}
 
 	form > * {
-		background-color: #fafafa;
+		background-color: rgba(255, 255, 255, 0.4);
 		width: 100%;
 		padding: 6px 12px;
 		border-radius: 0.5em;
-		border: 1px solid #d0d0d0;
+		border: 1px solid #c0c0c0;
 		font-family: 'IBM Plex Sans', sans-serif;
 		font-size: 1rem;
 	}
