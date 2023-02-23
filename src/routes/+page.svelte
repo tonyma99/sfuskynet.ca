@@ -97,10 +97,7 @@
 		</p>
 		<div>
 			<a href="https://go.sfss.ca/clubs/721/info"
-				>Join Us <i
-					class="fa-solid fa-arrow-up-right-from-square"
-					style="font-size: 0.85rem; margin-left: 4px;"
-				/></a
+				>Join Us <img src="/external.svg" alt="External link icon" width="14" height="14" /></a
 			>
 		</div>
 	</section>
@@ -160,6 +157,12 @@
 		gap: 4px;
 		padding: 0.5rem 1rem;
 		transition: 0.3s;
+	}
+
+	section#join a img {
+		filter: invert(1);
+		-webkit-filter: invert(1);
+		margin-left: 4px;
 	}
 
 	section#join a:hover {

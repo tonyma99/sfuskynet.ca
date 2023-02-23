@@ -1,5 +1,7 @@
 <script lang="ts">
 	import '../app.css'
+	import '@fontsource/ibm-plex-sans'
+	import '@fontsource/ibm-plex-sans/700.css'
 	import { Footer, Header } from '$lib/components'
 </script>
 
@@ -12,6 +14,21 @@
 </div>
 
 <style>
+	:global(body) {
+		font-family: 'IBM Plex Sans', sans-serif;
+		background-color: #f0f0f0;
+	}
+
+	:global(h1),
+	:global(h2),
+	:global(h3),
+	:global(h4),
+	:global(h5),
+	:global(h6),
+	:global(p) {
+		color: #1f1f1f;
+	}
+
 	div {
 		display: flex;
 		flex-direction: column;

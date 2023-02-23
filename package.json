@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/ibm-plex-sans": "^4.5.13",
 		"@sendgrid/mail": "^7.7.0"
 	}
 }

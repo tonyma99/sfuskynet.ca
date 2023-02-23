@@ -83,11 +83,16 @@
 	}
 
 	a {
+		color: #1f1f1f;
 		transition: 0.3s;
 	}
 
 	a:hover {
 		color: #777;
+	}
+
+	a > img:only-child {
+		display: block;
 	}
 
 	li {

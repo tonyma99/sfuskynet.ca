@@ -10,7 +10,7 @@
 	<p>{name}</p>
 	<p>{position}</p>
 	<a href={linkedin} aria-label={`${name}'s LinkedIn profile'`}>
-		<i class="fa-brands fa-linkedin-in" />
+		<img src="/linkedin.svg" alt="LinkedIn icon" width="16" height="16" />
 	</a>
 </div>
 
@@ -24,7 +24,7 @@
 		width: 10rem;
 	}
 
-	img {
+	div > img {
 		border-radius: 50%;
 		margin-bottom: 6px;
 	}
