@@ -39,8 +39,12 @@
 					{/each}
 				</ul>
 			{:else}
-				<span class="material-icons-round" on:click={toggle} on:keypress={toggle}
-					>{!menu ? 'menu' : 'close'}
+				<span on:click={toggle} on:keypress={toggle}>
+					{#if !menu}
+						<img src="menu_open.svg" alt="Open menu button icon" width="36" height="36" />
+					{:else}
+						<img src="menu_close.svg" alt="Close menu button icon" width="36" height="36" />
+					{/if}
 				</span>
 			{/if}
 		</div>
@@ -109,12 +113,15 @@
 
 	span {
 		cursor: pointer;
-		font-size: 36px;
 		padding: 0.25rem;
 		touch-action: manipulation;
 		user-select: none;
 		-moz-user-select: none;
 		-webkit-user-select: none;
+	}
+
+	span img {
+		display: block;
 	}
 
 	#mobile {
