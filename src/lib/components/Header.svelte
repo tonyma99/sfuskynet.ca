@@ -5,10 +5,6 @@
 	let innerWidth: number
 	$: if (innerWidth <= 768 || $navigating) menu = false
 
-	function toggle() {
-		menu = menu ? false : true
-	}
-
 	const links = [
 		{ path: '/', name: 'Home' },
 		{ path: '/teams', name: 'Teams' },
@@ -16,6 +12,10 @@
 		{ path: '/sponsors', name: 'Sponsors' },
 		{ path: '/contact', name: 'Contact' }
 	]
+
+	const toggle = () => {
+		menu = menu ? false : true
+	}
 </script>
 
 <svelte:window bind:innerWidth />
@@ -64,21 +64,21 @@
 	header {
 		align-items: center;
 		display: flex;
+		font-size: 1.05rem;
 		height: 64px;
 		padding: 0 48px;
 		z-index: 1;
-		font-size: 1.05rem;
 	}
 
 	header > :nth-child(1) {
-		flex: 1;
 		display: flex;
+		flex: 1;
 		justify-content: flex-start;
 	}
 
 	header > :nth-child(2) {
-		flex: 1;
 		display: flex;
+		flex: 1;
 		justify-content: flex-end;
 	}
 
@@ -104,23 +104,22 @@
 	}
 
 	span {
-		padding: 0.25rem;
-		font-size: 36px;
 		cursor: pointer;
+		font-size: 36px;
+		padding: 0.25rem;
+		touch-action: manipulation;
+		user-select: none;
 		-moz-user-select: none;
 		-webkit-user-select: none;
-		user-select: none;
-		touch-action: manipulation;
 	}
 
 	#mobile {
-		position: absolute;
-		background-color: #f8f8f8;
+		background-color: #f0f0f0;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 		left: 0;
+		position: absolute;
 		top: 64px;
 		width: 100%;
-		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-		background-color: #f0f0f0;
 	}
 
 	#mobile a {
@@ -129,10 +128,10 @@
 	}
 
 	#mobile li {
-		text-align: center;
-		margin-left: 0;
 		display: block;
+		margin-left: 0;
 		padding: 6px;
+		text-align: center;
 	}
 
 	[aria-current]:not([aria-current='false']) {

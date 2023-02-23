@@ -1,8 +1,8 @@
 <script lang="ts">
-	let success = false
 	let alert = false
-	let disabled = false
 	let color: string
+	let disabled = false
+	let success = false
 	$: success ? (color = '#376e37') : (color = '#a6192e')
 
 	const handleSubmit = async (event: Event) => {
@@ -12,10 +12,10 @@
 		formElement.reset()
 		const result = await fetch('/api/message', {
 			method: 'POST',
-			body: JSON.stringify(Object.fromEntries(formData)),
 			headers: {
 				'content-type': 'application/json'
-			}
+			},
+			body: JSON.stringify(Object.fromEntries(formData))
 		})
 		if (result.status === 200) success = true
 		alert = true
@@ -23,50 +23,52 @@
 	}
 </script>
 
-<form on:submit|preventDefault={handleSubmit}>
-	<input name="name" type="text" placeholder="Full name" required />
-	<input name="email" type="email" placeholder="Email" required />
-	<textarea name="message" placeholder="Message" required />
-	<button {disabled}>Submit</button>
-</form>
-{#if alert}
-	<div>
-		<p style:color>
-			{#if success}
-				Message successfully sent.
-			{:else}
-				Message failed to send.
-			{/if}
-		</p>
-	</div>
-{/if}
+<div>
+	<form on:submit|preventDefault={handleSubmit}>
+		<input name="name" type="text" placeholder="Full name" required />
+		<input name="email" type="email" placeholder="Email" required />
+		<textarea name="message" placeholder="Message" required />
+		<button {disabled}>Submit</button>
+	</form>
+	{#if alert}
+		<div>
+			<p style:color>
+				{#if success}
+					Message successfully sent.
+				{:else}
+					Message failed to send.
+				{/if}
+			</p>
+		</div>
+	{/if}
+</div>
 
 <style>
 	form {
 		display: flex;
-		gap: 6px;
 		flex-direction: column;
-		max-width: 576px;
+		gap: 6px;
 		margin: auto;
+		max-width: 576px;
 	}
 
 	form > * {
 		background-color: rgba(255, 255, 255, 0.4);
-		width: 100%;
-		padding: 6px 12px;
-		border-radius: 0.5em;
 		border: 1px solid #c0c0c0;
+		border-radius: 0.5em;
 		font-family: 'IBM Plex Sans', sans-serif;
 		font-size: 1rem;
+		padding: 6px 12px;
+		width: 100%;
 	}
 
 	form button {
-		transition: 0.3s;
 		background-color: #a6192e;
 		border: none;
 		color: #f0f0f0;
 		font-weight: bold;
 		padding: 8px;
+		transition: 0.3s;
 	}
 
 	form button:hover {

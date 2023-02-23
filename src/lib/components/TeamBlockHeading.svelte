@@ -13,15 +13,15 @@
 
 <style>
 	div {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		overflow: hidden;
+		aspect-ratio: 18/7;
 		background-size: cover;
 		border-radius: 0.25rem;
-		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		max-height: 256px;
-		aspect-ratio: 18/7;
+		overflow: hidden;
+		width: 100%;
 	}
 
 	h2 {
@@ -32,9 +32,9 @@
 	}
 
 	p {
-		text-shadow: 0px 1px 0px #1a1a1a;
 		font-size: 1.1rem;
 		margin: 0;
+		text-shadow: 0px 1px 0px #1a1a1a;
 	}
 
 	h2,
@@ -44,13 +44,13 @@
 
 	@media only screen and (max-width: 768px) {
 		div {
-			width: 100vw;
-			position: relative;
+			border-radius: 0;
 			left: 50%;
-			right: 50%;
 			margin-left: -50vw;
 			margin-right: -50vw;
-			border-radius: 0;
+			position: relative;
+			right: 50%;
+			width: 100vw;
 		}
 
 		h2 {

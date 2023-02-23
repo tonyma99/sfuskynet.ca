@@ -20,14 +20,14 @@
 
 <style>
 	a {
-		transition: 0.3s;
-		font-weight: bold;
-		margin-top: auto;
 		align-self: center;
 		background-color: #a6192e;
-		color: #f0f0f0;
-		padding: 6px 12px;
 		border-radius: 0.5rem;
+		color: #f0f0f0;
+		font-weight: bold;
+		margin-top: auto;
+		padding: 6px 12px;
+		transition: 0.3s;
 	}
 
 	a:hover {
@@ -35,16 +35,16 @@
 	}
 
 	div {
-		transition: 0.3s;
-		display: flex;
-		gap: 16px;
-		width: 100%;
-		flex-direction: column;
-		flex-basis: 100%;
 		background-color: #e0e0e0;
-		padding: 1.5em;
-		font-size: 1rem;
 		border-radius: 0.5rem;
+		display: flex;
+		flex-basis: 100%;
+		flex-direction: column;
+		font-size: 1rem;
+		gap: 16px;
+		padding: 1.5em;
+		transition: 0.3s;
+		width: 100%;
 	}
 
 	div:hover {
@@ -52,8 +52,8 @@
 	}
 
 	p:first-of-type {
-		font-weight: bold;
 		font-size: 22px;
+		font-weight: bold;
 		margin: 0;
 	}
 

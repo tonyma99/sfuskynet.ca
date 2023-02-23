@@ -6,7 +6,6 @@ sgMail.setApiKey(SENDGRID_API_KEY)
 
 export const POST: RequestHandler = async ({ request }) => {
 	const { name, email, message } = await request.json()
-
 	try {
 		const msg = {
 			to: EMAIL,
@@ -28,8 +27,8 @@ export const POST: RequestHandler = async ({ request }) => {
 			subject: 'SFU Robot Soccer - Message'
 		}
 		await sgMail.send(msg)
+		return new Response(null, { status: 200 })
 	} catch {
 		return new Response(null, { status: 500 })
 	}
-	return new Response(null, { status: 200 })
 }

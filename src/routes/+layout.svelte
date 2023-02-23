@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css'
-	import { Header, Footer } from '$lib/components'
+	import { Footer, Header } from '$lib/components'
 </script>
 
 <div>
@@ -19,10 +19,10 @@
 	}
 
 	main {
-		flex: 1;
 		display: flex;
+		flex: 1;
 		flex-direction: column;
-		width: 100%;
 		margin: 0 auto;
+		width: 100%;
 	}
 </style>

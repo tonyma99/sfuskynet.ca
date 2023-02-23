@@ -8,9 +8,11 @@
 		leads: Array<Person>
 		heads: Array<Person>
 	}
+	const titleText = 'Execs'
+	const headingText = 'Executive Team'
 </script>
 
-<ContentPageLayout titleText="Execs" headingText="Executive Team">
+<ContentPageLayout {titleText} {headingText}>
 	<div>
 		<h2>Executives</h2>
 		<div>
@@ -72,7 +74,7 @@
 	div > div {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
 		gap: 1rem;
+		justify-content: center;
 	}
 </style>

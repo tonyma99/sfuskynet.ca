@@ -51,16 +51,16 @@ const directors = [
 
 const leads = [
 	{
-		name: 'Matthew do Santos-Zounon',
-		position: 'Software Team Lead',
-		image: '/images/matthew.webp',
-		linkedin: 'https://www.linkedin.com/in/mdsz/'
-	},
-	{
 		name: 'Arvin Amini',
 		position: 'Mechanics Team Lead',
 		image: '/images/arvin.webp',
 		linkedin: 'https://www.linkedin.com/in/arvin-amini/'
+	},
+	{
+		name: 'Matthew do Santos-Zounon',
+		position: 'Software Team Lead',
+		image: '/images/matthew.webp',
+		linkedin: 'https://www.linkedin.com/in/mdsz/'
 	},
 	{
 		name: 'Judd Foster',

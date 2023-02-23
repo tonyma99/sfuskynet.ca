@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Container, PageCard, PageCardContainer } from '$lib/components'
+
 	const cards = [
 		{
 			heading: 'Teams',
@@ -107,19 +108,19 @@
 
 <style>
 	section#heading div {
-		width: 100vw;
-		position: relative;
-		left: 50%;
-		right: 50%;
-		margin-left: -50vw;
-		margin-right: -50vw;
-		height: 70vh;
-		max-height: 1024px;
 		background-size: cover;
 		display: flex;
-		justify-content: center;
 		flex-direction: column;
 		gap: 1rem;
+		height: 70vh;
+		justify-content: center;
+		left: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		max-height: 1024px;
+		position: relative;
+		right: 50%;
+		width: 100vw;
 	}
 
 	section#heading img {
@@ -129,8 +130,8 @@
 
 	section#heading h1 {
 		font-family: 'Helvetica Now Display', sans-serif;
-		font-weight: 900;
 		font-size: 4rem;
+		font-weight: 900;
 		text-shadow: 0px 1.5px 0px #1f1f1f;
 	}
 
@@ -143,30 +144,30 @@
 	section#heading h1,
 	section#heading p {
 		color: #f0f0f0;
-		margin: 0 auto;
-		padding: 0 1rem;
 		line-height: 1;
+		margin: 0 auto;
 		max-width: 64rem;
-	}
-
-	section#join div {
-		margin-top: 1.5em;
+		padding: 0 1rem;
 	}
 
 	section#join a {
-		transition: 0.3s;
-		display: inline-flex;
 		align-items: center;
-		gap: 4px;
-		color: #f0f0f0;
-		font-weight: bold;
-		padding: 0.5rem 1rem;
-		border-radius: 0.5em;
 		background-color: #a6192e;
+		border-radius: 0.5em;
+		color: #f0f0f0;
+		display: inline-flex;
+		font-weight: bold;
+		gap: 4px;
+		padding: 0.5rem 1rem;
+		transition: 0.3s;
 	}
 
 	section#join a:hover {
 		background-color: #cc0633;
+	}
+
+	section#join div {
+		margin-top: 1.5em;
 	}
 
 	section + section {

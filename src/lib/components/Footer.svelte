@@ -9,19 +9,19 @@
 
 <style>
 	footer {
+		align-items: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		padding: 1rem;
 		margin-top: 4rem;
+		padding: 1rem;
 	}
 
 	a {
-		transition: 0.3s;
 		align-items: center;
 		display: flex;
 		gap: 6px;
+		transition: 0.3s;
 	}
 
 	a:hover {
@@ -30,9 +30,9 @@
 
 	a,
 	p {
-		padding: 0.25rem;
 		color: #1a1a1a;
 		margin: 0;
+		padding: 0.25rem;
 	}
 
 	i {

@@ -9,19 +9,19 @@
 	<img src={image} alt="{name}'s profile picture" width="128" height="128" />
 	<p>{name}</p>
 	<p>{position}</p>
-	<a href={linkedin} aria-label={`${name}'s LinkedIn profile'`}
-		><i class="fa-brands fa-linkedin-in" /></a
-	>
+	<a href={linkedin} aria-label={`${name}'s LinkedIn profile'`}>
+		<i class="fa-brands fa-linkedin-in" />
+	</a>
 </div>
 
 <style>
 	div {
+		align-items: center;
 		display: flex;
 		flex-direction: column;
-		justify-content: top;
-		align-items: center;
-		width: 10rem;
 		gap: 6px;
+		justify-content: top;
+		width: 10rem;
 	}
 
 	img {
@@ -39,7 +39,7 @@
 	}
 
 	p:nth-of-type(2) {
-		font-size: 0.9rem;
 		color: #444;
+		font-size: 0.9rem;
 	}
 </style>
