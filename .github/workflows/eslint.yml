@@ -6,8 +6,6 @@ on:
   pull_request:
     # The branches below must be a subset of the branches above
     branches: ['main']
-  schedule:
-    - cron: '34 18 * * 4'
 
 jobs:
   lint:
@@ -33,8 +31,7 @@ jobs:
           npm install prettier-plugin-svelte@^2.9.0
 
       - name: Run Prettier
-        run: |
-          npx prettier --plugin-search-dir . --check .
+        run: npx prettier --plugin-search-dir . --check .
 
       - name: Run ESLint
         run: npx eslint .
