@@ -16,11 +16,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
-
       - name: Install Prettier
         run: |
           npm install \
@@ -29,7 +24,7 @@ jobs:
 
       - name: Install ESLint
         run: |
-          npm install eslint@^8.34.0
+          npm install eslint@^8.34.0 \
             eslint-config-prettier@^8.6.0 \
             eslint-plugin-svelte3@^4.0.0 \
             @typescript-eslint/eslint-plugin@^5.53.0 \
