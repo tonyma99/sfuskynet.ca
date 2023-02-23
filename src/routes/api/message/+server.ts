@@ -5,7 +5,6 @@ import sgMail from '@sendgrid/mail'
 sgMail.setApiKey(SENDGRID_API_KEY)
 
 export const POST: RequestHandler = async ({ request }) => {
-<<<<<<< HEAD
   const { name, email, message } = await request.json()
 
   try {
@@ -33,23 +32,4 @@ export const POST: RequestHandler = async ({ request }) => {
     return new Response(null, { status: 500 })
   }
   return new Response(null, { status: 200 })
-=======
-	const body = await request.json()
-	const text = `Name: ${body.name}\nEmail: (${body.email})\n---\n\n${body.message}`
-
-	try {
-		const msg = {
-			to: 'matonym@sfu.ca',
-			from: 'matonym@sfu.ca',
-			subject: 'SFU Robot Soccer Club Website Message',
-			text: text
-		}
-		await sgMail.send(msg)
-	} catch (e) {
-		console.error(e)
-		return new Response(null, { status: 500 })
-	}
-
-	return new Response(null, { status: 200 })
->>>>>>> main
 }
