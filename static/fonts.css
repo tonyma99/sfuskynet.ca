@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Helvetica Now Display';
-    src: local('Helvetica Now Display Ext Blk'), local('Helvetica-Now-Display-Ext-Blk'),
-        url('fonts/HelveticaNowDisplay-ExtBlk.woff2') format('woff2'),
-        url('fonts/HelveticaNowDisplay-ExtBlk.woff') format('woff'),
-        url('fonts/HelveticaNowDisplay-ExtBlk.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Helvetica Now Display';
+	src: local('Helvetica Now Display Ext Blk'), local('Helvetica-Now-Display-Ext-Blk'),
+		url('fonts/HelveticaNowDisplay-ExtBlk.woff2') format('woff2'),
+		url('fonts/HelveticaNowDisplay-ExtBlk.woff') format('woff'),
+		url('fonts/HelveticaNowDisplay-ExtBlk.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
 }
