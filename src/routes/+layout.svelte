@@ -39,6 +39,10 @@
 		color: #1f1f1f;
 	}
 
+	:global(::selection) {
+		background: #a6192e40;
+	}
+
 	div {
 		display: flex;
 		flex-direction: column;

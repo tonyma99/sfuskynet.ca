@@ -27,12 +27,10 @@
 	h2 {
 		font-size: 2.5em;
 		margin: 0;
-		text-shadow: 0px 1.5px 0px #1a1a1a;
 	}
 
 	p {
 		margin: 0;
-		text-shadow: 0px 1px 0px #1a1a1a;
 	}
 
 	h2,
