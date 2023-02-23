@@ -28,7 +28,6 @@ jobs:
           npm install eslint-plugin-svelte3@^4.0.0
           npm install @typescript-eslint/eslint-plugin@^5.53.0
           npm install @typescript-eslint/parser@^5.53.0
-          npm install @microsoft/eslint-formatter-sarif@2.1.7
 
       - name: Install Prettier
         run: |
