@@ -38,13 +38,11 @@ jobs:
       - name: Run Prettier
         run: |
           npx prettier --plugin-search-dir . --check .
-        contine-on-error: false
 
       - name: Run ESLint
         run: npx eslint .
           --format @microsoft/eslint-formatter-sarif
           --output-file eslint-results.sarif
-        continue-on-error: false
 
       - name: Upload analysis results to GitHub
         uses: github/codeql-action/upload-sarif@v2
