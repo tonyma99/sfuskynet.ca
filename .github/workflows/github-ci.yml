@@ -23,14 +23,13 @@ jobs:
 
       - name: Install Prettier
         run: |
-          pnpm install \
+          npm install \
             prettier@^2.8.4 \
             prettier-plugin-svelte@^2.9.0
 
       - name: Install ESLint
         run: |
-          pnpm install \
-            eslint@^8.34.0 \
+          npm install eslint@^8.34.0
             eslint-config-prettier@^8.6.0 \
             eslint-plugin-svelte3@^4.0.0 \
             @typescript-eslint/eslint-plugin@^5.53.0 \
