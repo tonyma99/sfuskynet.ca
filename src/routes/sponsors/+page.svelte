@@ -14,13 +14,27 @@
 	<h2>Gold Sponsors</h2>
 	<div>
 		{#each data.sponsors as sponsor}
-			<a href={sponsor.website}><img src={sponsor.logo} alt="{sponsor.name} logo" width="256" /></a>
+			<a href={sponsor.website} target="_blank" rel="noreferrer"
+				><img src={sponsor.logo} alt="{sponsor.name} logo" width="256" height="64" /></a
+			>
 		{/each}
 	</div>
 </ContentPageLayout>
 
 <style>
+	div {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: center;
+	}
+
 	a {
 		display: inline-block;
+	}
+
+	img {
+		display: block;
+		object-fit: contain;
 	}
 </style>

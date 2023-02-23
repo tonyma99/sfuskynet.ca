@@ -64,7 +64,6 @@
 	header {
 		align-items: center;
 		display: flex;
-		font-size: 1.05rem;
 		height: 64px;
 		padding: 0 48px;
 		z-index: 1;
@@ -129,7 +128,11 @@
 
 	#mobile a {
 		display: block;
-		font-size: 1.2em;
+		font-size: 1.2rem;
+	}
+
+	#mobile ul {
+		margin-top: 0;
 	}
 
 	#mobile li {

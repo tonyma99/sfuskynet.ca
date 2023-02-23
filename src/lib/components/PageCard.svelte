@@ -24,9 +24,10 @@
 		background-color: #a6192e;
 		border-radius: 0.5rem;
 		color: #f0f0f0;
+		font-size: 0.9rem;
 		font-weight: bold;
 		margin-top: auto;
-		padding: 6px 12px;
+		padding: 0.5rem 0.8rem;
 		transition: 0.3s;
 	}
 
@@ -40,7 +41,6 @@
 		display: flex;
 		flex-basis: 100%;
 		flex-direction: column;
-		font-size: 1rem;
 		gap: 16px;
 		padding: 1.5em;
 		transition: 0.3s;
@@ -52,8 +52,8 @@
 	}
 
 	p:first-of-type {
-		font-size: 22px;
-		font-weight: bold;
+		font-size: 1.33rem;
+		font-weight: 900;
 		margin: 0;
 	}
 

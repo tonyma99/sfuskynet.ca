@@ -1,7 +1,8 @@
 <script lang="ts">
 	import '../app.css'
-	import '@fontsource/ibm-plex-sans'
-	import '@fontsource/ibm-plex-sans/700.css'
+	import '@fontsource/inter'
+	import '@fontsource/inter/700.css'
+	import '@fontsource/inter/900.css'
 	import { Footer, Header } from '$lib/components'
 </script>
 
@@ -15,8 +16,17 @@
 
 <style>
 	:global(body) {
-		font-family: 'IBM Plex Sans', sans-serif;
+		font-family: 'Inter', sans-serif;
 		background-color: #f0f0f0;
+	}
+
+	:global(h1),
+	:global(h2),
+	:global(h3),
+	:global(h4),
+	:global(h5),
+	:global(h6) {
+		font-weight: 900;
 	}
 
 	:global(h1),

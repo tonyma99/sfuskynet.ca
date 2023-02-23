@@ -56,9 +56,9 @@
 		background-color: rgba(255, 255, 255, 0.4);
 		border: 1px solid #c0c0c0;
 		border-radius: 0.5em;
-		font-family: 'IBM Plex Sans', sans-serif;
+		font-family: inherit;
 		font-size: 1rem;
-		padding: 6px 12px;
+		padding: 0.5rem;
 		width: 100%;
 	}
 
@@ -67,7 +67,6 @@
 		border: none;
 		color: #f0f0f0;
 		font-weight: bold;
-		padding: 8px;
 		transition: 0.3s;
 	}
 

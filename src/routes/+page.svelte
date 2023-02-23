@@ -27,7 +27,7 @@
 <Container>
 	<section id="heading">
 		<div
-			style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background.webp');"
+			style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/background.webp');"
 		>
 			<img src="/images/logo.png" alt="SFU Robot Socccer Club team logo" width="128" height="128" />
 			<h1>SFU Robot Soccer</h1>
@@ -96,8 +96,8 @@
 			matches!
 		</p>
 		<div>
-			<a href="https://go.sfss.ca/clubs/721/info"
-				>Join Us <img src="/external.svg" alt="External link icon" width="14" height="14" /></a
+			<a href="https://go.sfss.ca/clubs/721/info" target="_blank" rel="noreferrer"
+				>Join Us <img src="/external.svg" alt="External link icon" width="12" height="12" /></a
 			>
 		</div>
 	</section>
@@ -126,14 +126,15 @@
 	}
 
 	section#heading h1 {
-		font-family: 'Helvetica Now Display', sans-serif;
 		font-size: 4rem;
 		font-weight: 900;
+		line-height: 1;
 		text-shadow: 0px 1.5px 0px #1f1f1f;
 	}
 
 	section#heading p {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
+		line-height: 1.33;
 		margin-top: 1rem;
 		text-shadow: 0px 1px 0px #1f1f1f;
 	}
@@ -141,9 +142,7 @@
 	section#heading h1,
 	section#heading p {
 		color: #f0f0f0;
-		line-height: 1;
 		margin: 0 auto;
-		max-width: 64rem;
 		padding: 0 1rem;
 	}
 
@@ -153,9 +152,10 @@
 		border-radius: 0.5em;
 		color: #f0f0f0;
 		display: inline-flex;
+		font-size: 0.9rem;
 		font-weight: bold;
 		gap: 4px;
-		padding: 0.5rem 1rem;
+		padding: 0.5rem 0.8rem;
 		transition: 0.3s;
 	}
 
@@ -179,13 +179,7 @@
 
 	@media only screen and (max-width: 768px) {
 		section#heading h1 {
-			font-size: 3rem;
-			line-height: 1;
-		}
-
-		section#heading p {
-			font-size: 1rem;
-			line-height: 1.2;
+			font-size: 3.5rem;
 		}
 	}
 </style>

@@ -5,7 +5,7 @@
 </script>
 
 <div
-	style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({team.image});"
+	style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url({team.image});"
 >
 	<h2>{team.name}</h2>
 	<p>{team.headline}</p>
@@ -19,20 +19,18 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		max-height: 256px;
+		max-height: 192px;
 		overflow: hidden;
 		width: 100%;
 	}
 
 	h2 {
-		font-family: 'Helvetica Now Display', sans-serif;
-		font-size: 3em;
+		font-size: 2.5em;
 		margin: 0;
 		text-shadow: 0px 1.5px 0px #1a1a1a;
 	}
 
 	p {
-		font-size: 1.1rem;
 		margin: 0;
 		text-shadow: 0px 1px 0px #1a1a1a;
 	}
@@ -42,7 +40,7 @@
 		color: #f0f0f0;
 	}
 
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 64rem) {
 		div {
 			border-radius: 0;
 			left: 50%;
@@ -52,9 +50,11 @@
 			right: 50%;
 			width: 100vw;
 		}
+	}
 
+	@media only screen and (max-width: 768px) {
 		h2 {
-			font-size: 2em;
+			font-size: 2rem;
 		}
 
 		p {

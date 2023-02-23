@@ -39,7 +39,6 @@
 	}
 
 	p:nth-of-type(2) {
-		color: #444;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 	}
 </style>
