@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { ContentPageLayout, Profile } from '$lib/components'
-	import type { Persons } from '$lib/types'
+	import type { Person } from '$lib/types'
 
 	export let data: {
 		executives: Array<Person>
