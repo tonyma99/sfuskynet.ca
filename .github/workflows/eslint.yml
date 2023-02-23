@@ -10,7 +10,7 @@ on:
     - cron: '34 18 * * 4'
 
 jobs:
-  eslint:
+  lint:
     name: Run code scanning
     runs-on: ubuntu-latest
     permissions:
