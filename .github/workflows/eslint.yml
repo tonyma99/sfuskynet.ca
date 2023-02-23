@@ -1,17 +1,17 @@
-name: ESLint
+name: ESLint & Prettier
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ "main" ]
+    branches: ['main']
   schedule:
     - cron: '34 18 * * 4'
 
 jobs:
   eslint:
-    name: Run eslint scanning
+    name: Run code scanning
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -23,15 +23,28 @@ jobs:
 
       - name: Install ESLint
         run: |
-          npm install eslint@8.10.0
+          npm install eslint@^8.34.0
+          npm install eslint-config-prettier@^8.6.0
+          npm install eslint-plugin-svelte3@^4.0.0
+          npm install @typescript-eslint/eslint-plugin@^5.53.0
+          npm install @typescript-eslint/parser@^5.53.0
           npm install @microsoft/eslint-formatter-sarif@2.1.7
+
+      - name: Install Prettier
+        run: |
+          npm install prettier@^2.8.4
+          npm install prettier-plugin-svelte@^2.9.0
+
+      - name: Run Prettier
+        run: |
+          npx prettier --plugin-search-dir . --check .
+        contine-on-error: false
 
       - name: Run ESLint
         run: npx eslint .
-          --config .eslintrc.cjs
           --format @microsoft/eslint-formatter-sarif
           --output-file eslint-results.sarif
-        continue-on-error: true
+        continue-on-error: false
 
       - name: Upload analysis results to GitHub
         uses: github/codeql-action/upload-sarif@v2
