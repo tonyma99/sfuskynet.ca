@@ -24,7 +24,7 @@
 		background-color: var(--primary-color-dark);
 		border-radius: var(--border-radius);
 		color: #fff;
-		font-size: 0.9rem;
+		font-size: 0.9375rem;
 		font-weight: bold;
 		margin-top: auto;
 		padding: 0.5rem 0.8rem;
@@ -52,7 +52,7 @@
 	}
 
 	p:first-of-type {
-		font-size: 1.33rem;
+		font-size: 1.375rem;
 		font-weight: 900;
 		margin: 0;
 	}

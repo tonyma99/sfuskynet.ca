@@ -133,7 +133,7 @@
 
 	#mobile a {
 		display: block;
-		font-size: 1.2rem;
+		font-size: 1.25rem;
 	}
 
 	#mobile ul {

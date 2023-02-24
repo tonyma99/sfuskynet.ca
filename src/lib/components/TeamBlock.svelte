@@ -5,7 +5,7 @@
 	export let team: Team
 	export let idx: number
 	let margin: string
-	idx !== 0 ? (margin = '3rem 0 0 0') : (margin = '0')
+	idx !== 0 ? (margin = '64px 0 0 0') : (margin = '0')
 </script>
 
 <div style:margin>
@@ -17,3 +17,10 @@
 		{/each}
 	</div>
 </div>
+
+<style>
+	p {
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+</style>

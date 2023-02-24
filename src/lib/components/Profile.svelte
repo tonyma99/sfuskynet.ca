@@ -21,7 +21,7 @@
 		flex-direction: column;
 		gap: 6px;
 		justify-content: top;
-		width: 10rem;
+		width: 160px;
 	}
 
 	div > img {
@@ -39,6 +39,6 @@
 	}
 
 	p:nth-of-type(2) {
-		font-size: 0.8rem;
+		font-size: 0.875rem;
 	}
 </style>

@@ -8,7 +8,7 @@
 		background-color: var(--primary-color-dark);
 		border-radius: 16px;
 		display: inline-flex;
-		font-size: 0.8125em;
+		font-size: 0.8125rem;
 		height: 32px;
 		margin: 4px;
 		min-width: 32px;

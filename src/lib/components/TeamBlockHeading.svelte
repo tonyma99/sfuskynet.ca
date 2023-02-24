@@ -25,11 +25,12 @@
 	}
 
 	h2 {
-		font-size: 2.5em;
+		font-size: 2.5rem;
 		margin: 0;
 	}
 
 	p {
+		font-weight: 500;
 		margin: 0;
 	}
 
@@ -56,7 +57,7 @@
 		}
 
 		p {
-			font-size: 1em;
+			font-size: 1rem;
 			font-weight: normal;
 		}
 	}

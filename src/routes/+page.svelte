@@ -138,7 +138,8 @@
 	}
 
 	section#heading p {
-		font-size: 1.1rem;
+		font-size: 1.125rem;
+		font-weight: 500;
 		line-height: 1.33;
 		margin-top: 1rem;
 	}
@@ -156,7 +157,7 @@
 		border-radius: var(--border-radius);
 		color: #fff;
 		display: inline-flex;
-		font-size: 0.9rem;
+		font-size: 0.9375rem;
 		font-weight: bold;
 		gap: 4px;
 		padding: 0.5rem 0.8rem;
