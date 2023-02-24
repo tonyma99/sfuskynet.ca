@@ -16,20 +16,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         
-      - name: Install Prettier
-        run: |
-          pnpm install |
-            prettier@^2.8.4
-            prettier-plugin-svelte@^2.9.0
-
-      - name: Install ESLint
-        run: |
-          pnpm install |
-            eslint@^8.34.0
-            eslint-config-prettier@^8.6.0
-            eslint-plugin-svelte3@^4.0.0
-            @typescript-eslint/eslint-plugin@^5.53.0
-            @typescript-eslint/parser@^5.53.0
+      - name: Install dependencies
+        run: npm install
 
       - name: Run Prettier
         run: npx prettier --plugin-search-dir . --check .
