@@ -86,12 +86,11 @@
 	}
 
 	a {
-		color: #1f1f1f;
-		transition: 0.3s;
+		transition: 0.2s;
 	}
 
 	a:hover {
-		color: #777;
+		color: var(--grey-400);
 	}
 
 	a > img:only-child {
@@ -125,8 +124,7 @@
 	}
 
 	#mobile {
-		background-color: #f0f0f0;
-		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+		background-color: var(--background-color);
 		left: 0;
 		position: absolute;
 		top: 64px;

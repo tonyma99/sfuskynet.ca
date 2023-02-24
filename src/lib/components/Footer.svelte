@@ -22,7 +22,7 @@
 		color: var(--grey-700);
 		display: flex;
 		gap: 6px;
-		transition: 0.3s;
+		transition: 0.2s;
 	}
 
 	a:hover {

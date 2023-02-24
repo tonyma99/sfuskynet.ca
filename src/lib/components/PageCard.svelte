@@ -43,7 +43,7 @@
 		flex-direction: column;
 		gap: 16px;
 		padding: 1.5em;
-		transition: 0.3s;
+		transition: 0.2s;
 		width: 100%;
 	}
 

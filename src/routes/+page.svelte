@@ -160,7 +160,7 @@
 		font-weight: bold;
 		gap: 4px;
 		padding: 0.5rem 0.8rem;
-		transition: 0.3s;
+		transition: 0.2s;
 	}
 
 	section#join a img {
