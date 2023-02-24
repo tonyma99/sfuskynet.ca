@@ -22,7 +22,7 @@
 	a {
 		align-self: center;
 		background-color: var(--primary-color-dark);
-		border-radius: 8px;
+		border-radius: var(--border-radius);
 		color: #fff;
 		font-size: 0.9rem;
 		font-weight: bold;
@@ -37,7 +37,7 @@
 
 	div {
 		background-color: var(--grey-100);
-		border-radius: 0.5rem;
+		border-radius: var(--border-radius);
 		display: flex;
 		flex-basis: 100%;
 		flex-direction: column;

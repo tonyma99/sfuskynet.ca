@@ -55,7 +55,7 @@
 	form > * {
 		background-color: #ffffff70;
 		border: 1px solid #00000040;
-		border-radius: 8px;
+		border-radius: var(--border-radius);
 		font-family: inherit;
 		font-size: 1rem;
 		padding: 0.5rem;

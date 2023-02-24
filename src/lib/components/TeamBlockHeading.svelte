@@ -15,7 +15,7 @@
 	div {
 		aspect-ratio: 18/7;
 		background-size: cover;
-		border-radius: 0.25rem;
+		border-radius: var(--border-radius);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

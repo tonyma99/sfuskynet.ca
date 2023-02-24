@@ -153,7 +153,7 @@
 	section#join a {
 		align-items: center;
 		background-color: var(--primary-color-dark);
-		border-radius: 0.5em;
+		border-radius: var(--border-radius);
 		color: #fff;
 		display: inline-flex;
 		font-size: 0.9rem;
