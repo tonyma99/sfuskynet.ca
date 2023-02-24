@@ -131,6 +131,7 @@
 	}
 
 	section#heading h1 {
+		font-family: 'Inter Tight';
 		font-size: 4rem;
 		font-weight: 900;
 		line-height: 1;
@@ -144,16 +145,16 @@
 
 	section#heading h1,
 	section#heading p {
-		color: #f0f0f0;
+		color: #fff;
 		margin: 0 auto;
 		padding: 0 1rem;
 	}
 
 	section#join a {
 		align-items: center;
-		background-color: #a6192e;
+		background-color: var(--primary-color-dark);
 		border-radius: 0.5em;
-		color: #f0f0f0;
+		color: #fff;
 		display: inline-flex;
 		font-size: 0.9rem;
 		font-weight: bold;
@@ -169,7 +170,7 @@
 	}
 
 	section#join a:hover {
-		background-color: #cc0633;
+		background-color: var(--primary-color);
 	}
 
 	section#join div {

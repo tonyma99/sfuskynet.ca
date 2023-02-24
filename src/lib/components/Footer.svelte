@@ -19,23 +19,23 @@
 
 	a {
 		align-items: center;
+		color: var(--grey-700);
 		display: flex;
 		gap: 6px;
 		transition: 0.3s;
 	}
 
 	a:hover {
-		color: #777;
+		color: var(--grey-400);
 	}
 
 	a,
 	p {
-		color: #1a1a1a;
 		margin: 0;
 		padding: 0.25rem;
 	}
 
 	footer > img {
-		margin: 0.5rem 0;
+		margin: 8px;
 	}
 </style>

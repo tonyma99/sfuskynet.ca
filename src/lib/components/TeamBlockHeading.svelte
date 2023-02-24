@@ -35,7 +35,7 @@
 
 	h2,
 	p {
-		color: #f0f0f0;
+		color: #fff;
 	}
 
 	@media only screen and (max-width: 64rem) {

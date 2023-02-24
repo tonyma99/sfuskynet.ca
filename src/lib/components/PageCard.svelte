@@ -21,22 +21,22 @@
 <style>
 	a {
 		align-self: center;
-		background-color: #a6192e;
-		border-radius: 0.5rem;
-		color: #f0f0f0;
+		background-color: var(--primary-color-dark);
+		border-radius: 8px;
+		color: #fff;
 		font-size: 0.9rem;
 		font-weight: bold;
 		margin-top: auto;
 		padding: 0.5rem 0.8rem;
-		transition: 0.3s;
+		transition: 0.2s;
 	}
 
 	a:hover {
-		background-color: #cc0633;
+		background-color: var(--primary-color);
 	}
 
 	div {
-		background-color: #e0e0e0;
+		background-color: var(--grey-100);
 		border-radius: 0.5rem;
 		display: flex;
 		flex-basis: 100%;
@@ -48,7 +48,7 @@
 	}
 
 	div:hover {
-		background-color: #d8d8d8;
+		filter: brightness(95%);
 	}
 
 	p:first-of-type {
