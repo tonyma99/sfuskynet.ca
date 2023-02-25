@@ -131,7 +131,6 @@
 	}
 
 	section#heading h1 {
-		font-family: 'Inter Tight';
 		font-size: 4rem;
 		font-weight: 900;
 		line-height: 1;

@@ -4,7 +4,6 @@
 	import '@fontsource/inter/500.css'
 	import '@fontsource/inter/700.css'
 	import '@fontsource/inter/900.css'
-	import '@fontsource/inter-tight/900.css'
 	import { Footer, Header } from '$lib/components'
 </script>
 

@@ -30,7 +30,6 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/inter": "^4.5.15",
-		"@fontsource/inter-tight": "^4.5.2",
 		"@sendgrid/mail": "^7.7.0"
 	}
 }
