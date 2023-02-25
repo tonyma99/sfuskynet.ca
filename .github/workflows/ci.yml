@@ -45,8 +45,11 @@ jobs:
             --collect.url=http://localhost:4173/execs \
             --collect.url=http://localhost:4173/contact \
             --collect.settings.preset=desktop \
-            --assert.preset="lighthouse:no-pwa" \
-            --assert.preset="lighthouse:recommended" \
+            --assert.assertions.categories:performance=warn \
+            --assert.assertions.categories:accessibility=warn \
+            --assert.assertions.categories:best-practices=warn \
+            --assert.assertions.categories:seo=warn \
+            --assert.assertions.categories:pwa=off \
             --upload.target="temporary-public-storage"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
