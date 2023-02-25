@@ -1,8 +1,6 @@
 name: CI
 
 on:
-  push:
-    branches: ['main']
   pull_request:
     branches: ['main']
 
@@ -47,5 +45,6 @@ jobs:
             --collect.url=http://localhost:4173/execs \
             --collect.url=http://localhost:4173/contact
             --assert.preset="lighthouse:recommended" \
-            --upload.target="temporary-public-storage" \
-            --upload.githubToken="${{ secrets.LHCI_GITHUB_APP_TOKEN }}"
+            --upload.target="temporary-public-storage"
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
