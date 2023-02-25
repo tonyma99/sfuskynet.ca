@@ -44,6 +44,8 @@ jobs:
             --collect.url=http://localhost:4173/teams \
             --collect.url=http://localhost:4173/execs \
             --collect.url=http://localhost:4173/contact \
+            --collect.settings.preset=desktop \
+            --assert.preset="lighthouse:no-pwa" \
             --assert.preset="lighthouse:recommended" \
             --upload.target="temporary-public-storage"
         env:
