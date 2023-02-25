@@ -46,3 +46,4 @@ jobs:
             --collect.url=http://localhost:4173/teams \
             --collect.url=http://localhost:4173/execs \
             --collect.url=http://localhost:4173/contact
+            --assert.preset="lighthouse:recommended"
