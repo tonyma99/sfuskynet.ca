@@ -43,8 +43,7 @@ jobs:
             --collect.url=http://localhost:4173 \
             --collect.url=http://localhost:4173/teams \
             --collect.url=http://localhost:4173/execs \
-            --collect.url=http://localhost:4173/contact
+            --collect.url=http://localhost:4173/contact \
             --assert.preset="lighthouse:recommended" \
-            --upload.target="temporary-public-storage"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
