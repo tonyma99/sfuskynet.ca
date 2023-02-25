@@ -53,7 +53,7 @@
 
 	p:first-of-type {
 		font-size: 1.375rem;
-		font-weight: 900;
+		font-weight: 700;
 		margin: 0;
 	}
 

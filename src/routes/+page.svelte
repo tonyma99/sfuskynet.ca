@@ -178,7 +178,7 @@
 	}
 
 	section + section {
-		margin-top: 3rem;
+		margin-top: 64px;
 	}
 
 	@media only screen and (max-width: 768px) {
