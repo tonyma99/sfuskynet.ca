@@ -39,10 +39,10 @@ jobs:
           SENDGRID_API_KEY: SG_TEST
           EMAIL: TEST
       - run: |
-        lhci autorun \
-          --collect.startServerCommand="npm run preview" \
-          --collect.startServerReadyPattern="Local" \
-          --collect.url=http://localhost:4173 \
-          --collect.url=http://localhost:4173/teams \
-          --collect.url=http://localhost:4173/execs \
-          --collect.url=http://localhost:4173/contact
+          lhci autorun \
+            --collect.startServerCommand="npm run preview" \
+            --collect.startServerReadyPattern="Local" \
+            --collect.url=http://localhost:4173 \
+            --collect.url=http://localhost:4173/teams \
+            --collect.url=http://localhost:4173/execs \
+            --collect.url=http://localhost:4173/contact
