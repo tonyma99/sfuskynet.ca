@@ -53,3 +53,7 @@ jobs:
             --upload.target="temporary-public-storage"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: artifact
+          path: .lighthouseci
