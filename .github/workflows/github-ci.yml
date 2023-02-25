@@ -38,4 +38,4 @@ jobs:
         env:
           SENDGRID_API_KEY: SG_TEST
           EMAIL: TEST
-      - run: lhci autorun
+      - run: lhci autorun --collect.startServerCommand='npm run start'
