@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { Container, PageCard, PageCardContainer } from '$lib/components'
+	import { dev } from '$app/environment'
+	import { inject } from '@vercel/analytics'
+	inject({ mode: dev ? 'development' : 'production' })
 
 	const cards = [
 		{
