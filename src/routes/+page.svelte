@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<title>SFU Robot Soccer</title>
+	<title>SFU Robot Soccer Club</title>
 </svelte:head>
 
 <Container>

@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>SFU Robot Soccer - {titleText}</title>
+	<title>SFU Robot Soccer Club - {titleText}</title>
 </svelte:head>
 
 <Container>
