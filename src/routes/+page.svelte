@@ -138,8 +138,7 @@
 	}
 
 	section#heading p {
-		font-size: 1.125rem;
-		font-weight: 500;
+		font-size: 1.25rem;
 		line-height: 1.33;
 		margin-top: 1rem;
 	}
@@ -185,6 +184,10 @@
 	@media only screen and (max-width: 768px) {
 		section#heading h1 {
 			font-size: 3.5rem;
+		}
+
+		section#heading p {
+			display: none;
 		}
 	}
 </style>

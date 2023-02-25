@@ -21,7 +21,7 @@
 
 	footer > a {
 		align-items: center;
-		color: var(--grey-500);
+		color: var(--grey-700);
 		display: flex;
 		gap: 6px;
 		transition: 0.2s;
@@ -44,7 +44,7 @@
 	}
 
 	footer > p:last-child a {
-		color: var(--grey-500);
+		color: var(--grey-700);
 		transition: 0.2s;
 	}
 
