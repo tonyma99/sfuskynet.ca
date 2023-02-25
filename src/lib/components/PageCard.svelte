@@ -19,6 +19,10 @@
 </div>
 
 <style>
+	div {
+		max-width: 288px;
+	}
+
 	a {
 		align-self: center;
 		background-color: var(--primary-color-dark);

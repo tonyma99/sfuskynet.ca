@@ -6,6 +6,7 @@
 	div {
 		padding: 0 1rem;
 		display: flex;
+		justify-content: center;
 		gap: 2rem;
 	}
 
@@ -14,7 +15,7 @@
 			margin: 0 auto;
 			padding: 0;
 			flex-direction: column;
-			max-width: 320px;
+			max-width: 288px;
 		}
 	}
 </style>

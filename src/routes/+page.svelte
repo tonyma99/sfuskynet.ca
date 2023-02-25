@@ -120,6 +120,7 @@
 		margin-left: -50vw;
 		margin-right: -50vw;
 		max-height: 1024px;
+		min-height: 320px;
 		position: relative;
 		right: 50%;
 		width: 100vw;

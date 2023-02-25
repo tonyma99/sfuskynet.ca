@@ -1,5 +1,6 @@
 :root {
 	--max-width: 1024px;
+	--header-max-width: 1280px;
 	--foreground-color: #000;
 	--background-color: #eee;
 	--primary-color: #cc0633;
