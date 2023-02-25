@@ -1,6 +1,8 @@
 {
 	"name": "website",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"author": "Tony Ma <tonyphma@gmail.com> (https://github.com/tonyma99)",
+	"homepage": "https://github.com/tonyma99/sfuskynet.ca",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",

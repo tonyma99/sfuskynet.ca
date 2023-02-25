@@ -5,6 +5,7 @@
 		>Join Us <img src="/external.svg" alt="External link icon" width="12" height="12" /></a
 	>
 	<p>SFU Robot Soccer</p>
+	<p>Created by <a href="https://github.com/tonyma99/sfuskynet.ca">Tony Ma</a></p>
 </footer>
 
 <style>
@@ -12,27 +13,43 @@
 		align-items: center;
 		display: flex;
 		flex-direction: column;
+		gap: 4px;
 		justify-content: center;
 		margin-top: 4rem;
 		padding: 1rem;
 	}
 
-	a {
+	footer > a {
 		align-items: center;
-		color: var(--grey-700);
+		color: var(--grey-500);
 		display: flex;
 		gap: 6px;
 		transition: 0.2s;
 	}
 
 	a:hover {
-		color: var(--grey-400);
+		color: #000;
 	}
 
-	a,
-	p {
+	footer > a,
+	footer > p {
 		margin: 0;
-		padding: 0.25rem;
+		padding: 2px;
+	}
+
+	footer > p:last-child {
+		display: none;
+		font-size: 0.75rem;
+		padding: 5px;
+	}
+
+	footer > p:last-child a {
+		color: var(--grey-500);
+		transition: 0.2s;
+	}
+
+	footer > p:last-child a:hover {
+		color: #000;
 	}
 
 	footer > img {
