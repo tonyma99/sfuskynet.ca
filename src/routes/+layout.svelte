@@ -5,10 +5,6 @@
 	import '@fontsource/inter/700.css'
 	import '@fontsource/inter/900.css'
 	import { Footer, Header } from '$lib/components'
-	import { dev } from '$app/environment'
-	import { inject } from '@vercel/analytics'
-
-	inject({ mode: dev ? 'development' : 'production' })
 </script>
 
 <div>
