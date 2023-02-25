@@ -21,39 +21,39 @@
 <style>
 	a {
 		align-self: center;
-		background-color: #a6192e;
-		border-radius: 0.5rem;
-		color: #f0f0f0;
-		font-size: 0.9rem;
+		background-color: var(--primary-color-dark);
+		border-radius: var(--border-radius);
+		color: #fff;
+		font-size: 0.9375rem;
 		font-weight: bold;
 		margin-top: auto;
 		padding: 0.5rem 0.8rem;
-		transition: 0.3s;
+		transition: 0.2s;
 	}
 
 	a:hover {
-		background-color: #cc0633;
+		background-color: var(--primary-color);
 	}
 
 	div {
-		background-color: #e0e0e0;
-		border-radius: 0.5rem;
+		background-color: var(--grey-100);
+		border-radius: var(--border-radius);
 		display: flex;
 		flex-basis: 100%;
 		flex-direction: column;
 		gap: 16px;
 		padding: 1.5em;
-		transition: 0.3s;
+		transition: 0.2s;
 		width: 100%;
 	}
 
 	div:hover {
-		background-color: #d8d8d8;
+		filter: brightness(95%);
 	}
 
 	p:first-of-type {
-		font-size: 1.33rem;
-		font-weight: 900;
+		font-size: 1.375rem;
+		font-weight: 700;
 		margin: 0;
 	}
 

@@ -57,30 +57,35 @@
 		<p>
 			Welcome to the Simon Fraser University Robot Soccer Club! Our club is dedicated to promoting
 			an interest in robotics and soccer among students by combining the knowledge of software,
-			electronics, and mechanics.<br />
-			<br />
+			electronics, and mechanics.
+		</p>
+		<p>
 			We believe that robotics and soccer are a perfect match - both require teamwork, strategy, and
-			problem-solving. Our club members learn about robotics and programming by building and programming
-			robots to compete in robot soccer matches against other schools.<br />
-			<br />
-			Our club is divided into three teams, software, electronics, and mechanics, each responsible for
-			different aspects of the robot design and performance. The software team develops and programs
-			the robot's control systems and AI, the electronics team designs and builds the robot's power and
-			communication systems, and the mechanics team designs and fabricates the robot's body and actuators.<br
-			/>
-			<br />
+			problem-solving. Our club members learn about robotics and programming by building and
+			programming robots to compete in robot soccer matches against other schools.
+		</p>
+		<p>
+			Our club is divided into three teams, software, electronics, and mechanics, each responsible
+			for different aspects of the robot design and performance. The software team develops and
+			programs the robot's control systems and AI, the electronics team designs and builds the
+			robot's power and communication systems, and the mechanics team designs and fabricates the
+			robot's body and actuators.
+		</p>
+		<p>
 			Our club is open to students of all skill levels, from those who have never worked with robots
-			before to those who have prior experience. We provide training and resources to help our members
-			learn and improve in their respective teams.<br />
-			<br />
-			We participate in various local, regional, and national robotics competitions and events throughout
-			the year, where we get to showcase our robots and compete against other teams. We also hold regular
-			meetings and practice sessions, where we work on building and programming our robots, as well as
-			refining our strategies for competition.<br />
-			<br />
-			We are more than just a robotics club, we are a community of students who share a passion for robotics
-			and soccer. We encourage and support each other to learn, grow, and succeed. Join us today and
-			be part of a winning team!
+			before to those who have prior experience. We provide training and resources to help our
+			members learn and improve in their respective teams.
+		</p>
+		<p>
+			We participate in various local, regional, and national robotics competitions and events
+			throughout the year, where we get to showcase our robots and compete against other teams. We
+			also hold regular meetings and practice sessions, where we work on building and programming
+			our robots, as well as refining our strategies for competition.
+		</p>
+		<p>
+			We are more than just a robotics club, we are a community of students who share a passion for
+			robotics and soccer. We encourage and support each other to learn, grow, and succeed. Join us
+			today and be part of a winning team!
 		</p>
 	</section>
 
@@ -129,34 +134,33 @@
 		font-size: 4rem;
 		font-weight: 900;
 		line-height: 1;
-		text-shadow: 0px 1.5px 0px #1f1f1f;
 	}
 
 	section#heading p {
-		font-size: 1.1rem;
+		font-size: 1.125rem;
+		font-weight: 500;
 		line-height: 1.33;
 		margin-top: 1rem;
-		text-shadow: 0px 1px 0px #1f1f1f;
 	}
 
 	section#heading h1,
 	section#heading p {
-		color: #f0f0f0;
+		color: #fff;
 		margin: 0 auto;
 		padding: 0 1rem;
 	}
 
 	section#join a {
 		align-items: center;
-		background-color: #a6192e;
-		border-radius: 0.5em;
-		color: #f0f0f0;
+		background-color: var(--primary-color-dark);
+		border-radius: var(--border-radius);
+		color: #fff;
 		display: inline-flex;
-		font-size: 0.9rem;
+		font-size: 0.9375rem;
 		font-weight: bold;
 		gap: 4px;
 		padding: 0.5rem 0.8rem;
-		transition: 0.3s;
+		transition: 0.2s;
 	}
 
 	section#join a img {
@@ -166,7 +170,7 @@
 	}
 
 	section#join a:hover {
-		background-color: #cc0633;
+		background-color: var(--primary-color);
 	}
 
 	section#join div {
@@ -174,7 +178,7 @@
 	}
 
 	section + section {
-		margin-top: 3rem;
+		margin-top: 64px;
 	}
 
 	@media only screen and (max-width: 768px) {

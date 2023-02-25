@@ -15,7 +15,7 @@
 	div {
 		aspect-ratio: 18/7;
 		background-size: cover;
-		border-radius: 0.25rem;
+		border-radius: var(--border-radius);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -25,19 +25,18 @@
 	}
 
 	h2 {
-		font-size: 2.5em;
+		font-size: 2.5rem;
 		margin: 0;
-		text-shadow: 0px 1.5px 0px #1a1a1a;
 	}
 
 	p {
+		font-weight: 500;
 		margin: 0;
-		text-shadow: 0px 1px 0px #1a1a1a;
 	}
 
 	h2,
 	p {
-		color: #f0f0f0;
+		color: #fff;
 	}
 
 	@media only screen and (max-width: 64rem) {
@@ -58,7 +57,7 @@
 		}
 
 		p {
-			font-size: 1em;
+			font-size: 1rem;
 			font-weight: normal;
 		}
 	}

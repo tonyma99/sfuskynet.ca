@@ -21,6 +21,6 @@
 
 <style>
 	div {
-		margin-bottom: 3rem;
+		margin-bottom: 64px;
 	}
 </style>

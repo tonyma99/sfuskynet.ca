@@ -53,37 +53,41 @@
 	}
 
 	form > * {
-		background-color: rgba(255, 255, 255, 0.4);
-		border: 1px solid #c0c0c0;
-		border-radius: 0.5em;
+		background-color: #ffffff70;
+		border: 1px solid #00000040;
+		border-radius: var(--border-radius);
 		font-family: inherit;
 		font-size: 1rem;
 		padding: 0.5rem;
 		width: 100%;
 	}
 
-	form button {
-		background-color: #a6192e;
+	::placeholder {
+		color: var(--grey-400);
+	}
+
+	button {
+		background-color: var(--primary-color-dark);
 		border: none;
-		color: #f0f0f0;
+		color: #fff;
 		font-weight: bold;
-		transition: 0.3s;
+		transition: 0.2s;
 	}
 
-	form button:hover {
-		background-color: #cc0633;
+	button:hover {
+		background-color: var(--primary-color);
 	}
 
-	form button:disabled {
-		background-color: #999;
+	button:disabled {
+		background-color: var(--grey-300);
 	}
 
-	form button:focus,
-	form button:active {
-		background-color: #a6192e;
+	button:focus,
+	button:active {
+		background-color: var(--primary-color-dark);
 	}
 
-	form textarea {
+	textarea {
 		height: 192px;
 		resize: none;
 	}

@@ -5,7 +5,8 @@
 <style>
 	div {
 		margin: 0 auto;
-		max-width: 64rem;
-		padding: 0 1rem;
+		max-width: var(--max-width);
+		padding: 0 16px;
+		text-align: center;
 	}
 </style>

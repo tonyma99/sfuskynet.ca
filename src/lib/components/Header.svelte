@@ -33,7 +33,7 @@
 					{#each links as link}
 						<li>
 							<a href={link.path} on:click={toggle} aria-current={$page.url.pathname === link.path}
-								>{link.name}</a
+								><span>{link.name}</span></a
 							>
 						</li>
 					{/each}
@@ -85,13 +85,18 @@
 		justify-content: flex-end;
 	}
 
-	a {
-		color: #1f1f1f;
-		transition: 0.3s;
+	li a {
+		padding: 4px;
+		transition: 0.2s;
 	}
 
-	a:hover {
-		color: #777;
+	li a span {
+		display: inline-block;
+		transition: 0.2s;
+	}
+
+	li a:hover span {
+		transform: scale(1.125);
 	}
 
 	a > img:only-child {
@@ -103,7 +108,7 @@
 	}
 
 	li + li {
-		margin-left: 16px;
+		margin-left: 8px;
 	}
 
 	ul {
@@ -111,7 +116,7 @@
 		padding-left: 0;
 	}
 
-	span {
+	div > span {
 		cursor: pointer;
 		padding: 0.25rem;
 		touch-action: manipulation;
@@ -125,8 +130,7 @@
 	}
 
 	#mobile {
-		background-color: #f0f0f0;
-		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+		background-color: var(--background-color);
 		left: 0;
 		position: absolute;
 		top: 64px;
@@ -135,7 +139,7 @@
 
 	#mobile a {
 		display: block;
-		font-size: 1.2rem;
+		font-size: 1.25rem;
 	}
 
 	#mobile ul {
@@ -145,12 +149,20 @@
 	#mobile li {
 		display: block;
 		margin-left: 0;
-		padding: 6px;
+		padding: 4px;
 		text-align: center;
 	}
 
 	[aria-current]:not([aria-current='false']) {
-		color: #a6192e;
+		color: var(--primary-color-dark);
+	}
+
+	[aria-current]:not([aria-current='true']) {
+		color: var(--grey-700);
+	}
+
+	[aria-current]:not([aria-current='true']):hover {
+		color: #000;
 	}
 
 	@media only screen and (max-width: 768px) {
