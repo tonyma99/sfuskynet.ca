@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let name: string
 	export let position: string
-	export let image = '/images/default_profile.png'
+	export let image = '/images/profile/default_profile.png'
 	export let linkedin: string
 </script>
 
