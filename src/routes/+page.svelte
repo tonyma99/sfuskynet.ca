@@ -4,17 +4,17 @@
 	const cards = [
 		{
 			heading: 'Teams',
-			description: 'Innovative minds, diverse skills - Our Teams',
+			description: 'Innovative minds, diverse skills',
 			page: '/teams'
 		},
 		{
 			heading: 'Execs',
-			description: 'Our Executive Team',
+			description: 'Meet our Executive Team',
 			page: '/execs'
 		},
 		{
 			heading: 'Contact',
-			description: 'Connect with us, get in touch - Contact Us',
+			description: 'Connect with us, get in touch',
 			page: '/contact'
 		}
 	]
