@@ -50,7 +50,7 @@ const directors = [
 	},
 	{
 		name: 'Mani Samet',
-		position: 'Director of Admin',
+		position: 'Director of Administration',
 		image: '/images/mani.jpeg',
 		linkedin: 'https://www.linkedin.com/in/mani-samet-6b7288260/'
 	}
