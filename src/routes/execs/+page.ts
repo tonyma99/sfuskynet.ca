@@ -23,7 +23,7 @@ const executives = [
 	},
 	{
 		name: 'Yu-Xing Lim',
-		position: 'VP of Administration',
+		position: 'VP of Operation',
 		image: '/images/yu_xing_lim.webp',
 		linkedin: 'https://www.linkedin.com/in/yu-xing-lim-10706b252/'
 	},
@@ -39,6 +39,7 @@ const directors = [
 	{
 		name: 'Ara Christie',
 		position: 'Director of Graphic Design',
+		image: '/images/ara.jpeg',
 		linkedin: 'https://www.linkedin.com/in/ara-christie-8a0404261'
 	},
 	{
@@ -46,6 +47,12 @@ const directors = [
 		position: 'Director of Outreach',
 		image: '/images/martin.webp',
 		linkedin: 'https://www.linkedin.com/in/matin-keivanloo-2152a0204'
+	},
+	{
+		name: 'Mani Samet',
+		position: 'Director of Admin',
+		image: '/images/mani.jpeg',
+		linkedin: 'https://www.linkedin.com/in/mani-samet-6b7288260/'
 	}
 ]
 
@@ -59,7 +66,7 @@ const leads = [
 	{
 		name: 'Matthew do Santos-Zounon',
 		position: 'Software Team Lead',
-		image: '/images/matthew.webp',
+		image: '/images/matthew.png',
 		linkedin: 'https://www.linkedin.com/in/mdsz/'
 	},
 	{
@@ -74,7 +81,7 @@ const heads = [
 	{
 		name: 'Vlad Nadtochii',
 		position: 'Head of Software Development',
-		image: '/images/vlad.webp',
+		image: '/images/vlad.jpg',
 		linkedin: 'https://www.linkedin.com/in/vlad-nadtochii-b451b5175/'
 	}
 ]
