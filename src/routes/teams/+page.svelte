@@ -6,7 +6,7 @@
 	const headingText = 'Teams'
 	const description = `
 		At the SFU Robot Soccer Club, our team members come from different majors, experience levels and backgrounds.
-		Our core teams are our <b>Mechanics</b>, <b>Electronics</b> and <b>Software</b> team where we work together
+		Our core teams are our <b>Mechanics</b>, <b>Electronics</b> and <b>Software</b> teams where we work together
 		to get our autonomous robots competition ready.
 	`
 </script>
