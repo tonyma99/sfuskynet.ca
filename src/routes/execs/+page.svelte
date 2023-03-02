@@ -7,6 +7,7 @@
 		directors: Array<Person>
 		leads: Array<Person>
 		heads: Array<Person>
+		alumni: Array<Person>
 	}
 	const titleText = 'Execs'
 	const headingText = 'Executive Team'
@@ -72,8 +73,13 @@
 	<div>
 		<h2>Alumni</h2>
 		<div>
-			{#each Array(10) as _}
-				<Profile name="Name" />
+			{#each data.alumni as alumn}
+				<Profile
+					name={alumn.name}
+					position={alumn.position}
+					image={alumn.image}
+					linkedin={alumn.position}
+				/>
 			{/each}
 		</div>
 	</div>

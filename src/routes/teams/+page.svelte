@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ContentPageLayout, Profile, TeamBlock } from '$lib/components'
+	import { ContentPageLayout, TeamBlock } from '$lib/components'
 	import type { Team } from '$lib/types'
 
 	export let data: { teams: Array<Team> }

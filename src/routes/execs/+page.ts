@@ -1,8 +1,10 @@
+import type { Person } from '$lib/types'
+
 export const load = () => {
-	return { executives, directors, leads, heads }
+	return { executives, directors, leads, heads, alumni }
 }
 
-const executives = [
+const executives: Array<Person> = [
 	{
 		name: 'Zach Spencer',
 		position: 'President',
@@ -35,7 +37,7 @@ const executives = [
 	}
 ]
 
-const directors = [
+const directors: Array<Person> = [
 	{
 		name: 'Ara Christie',
 		position: 'Director of Graphic Design',
@@ -56,7 +58,7 @@ const directors = [
 	}
 ]
 
-const leads = [
+const leads: Array<Person> = [
 	{
 		name: 'Arvin Amini',
 		position: 'Mechanics Team Lead',
@@ -77,11 +79,68 @@ const leads = [
 	}
 ]
 
-const heads = [
+const heads: Array<Person> = [
 	{
 		name: 'Vlad Nadtochii',
 		position: 'Head of Software Development',
 		image: '/images/profile/vlad.webp',
 		linkedin: 'https://www.linkedin.com/in/vlad-nadtochii-b451b5175/'
+	}
+]
+
+const alumni: Array<Person> = [
+	{
+		name: 'Arvin Amini',
+		position: 'President',
+		image: '/images/profile/arvin.webp',
+		linkedin: 'https://www.linkedin.com/in/arvin-amini/'
+	},
+	{
+		name: 'George Lertzman Lepofsky',
+		position: 'VP of Administration',
+		image: '/images/profile/george.webp',
+		linkedin: 'https://www.linkedin.com/in/georgelertzmanlepofsky/'
+	},
+	{
+		name: 'Amitis Haghdadi',
+		position: 'Vice President',
+		image: '/images/profile/amitis.webp',
+		linkedin: 'https://www.linkedin.com/in/amitis-haghdadi-397ba5140/'
+	},
+	{
+		name: 'Tara Kazemi',
+		position: 'VP of Finance',
+		image: '/images/profile/tara.webp',
+		linkedin: 'https://www.linkedin.com/in/tarahk/'
+	},
+	{
+		name: 'Jordan Lei',
+		position: 'VP of Finance',
+		image: '/images/profile/jordan.webp',
+		linkedin: 'https://www.linkedin.com/in/jordanlei/'
+	},
+	{
+		name: 'Damoon Tahmasbi',
+		position: 'Software Team Lead',
+		image: '/images/profile/damoon.webp',
+		linkedin: 'https://www.linkedin.com/in/damoon-tahmasbi/'
+	},
+	{
+		name: 'Carlo Clores',
+		position: 'Mechanics Team Lead',
+		image: '/images/profile/carlo.webp',
+		linkedin: 'https://www.linkedin.com/in/carloclores/'
+	},
+	{
+		name: 'Dylan Reviczky',
+		position: 'Software Team Lead',
+		image: '/images/profile/dylan.webp',
+		linkedin: 'https://www.linkedin.com/in/dylanrev/'
+	},
+	{
+		name: 'Aidan Gerrebos',
+		position: 'Mechanics Team Lead',
+		image: '/images/profile/aidan.webp',
+		linkedin: 'https://www.linkedin.com/in/aidan-gerrebos/'
 	}
 ]
