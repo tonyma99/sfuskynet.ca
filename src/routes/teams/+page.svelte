@@ -15,24 +15,4 @@
 	{#each data.teams as team, idx}
 		<TeamBlock {team} {idx} />
 	{/each}
-
-	<h2>Alumni</h2>
-	<div>
-		{#each Array(10) as _}
-			<Profile name="Name" />
-		{/each}
-	</div>
 </ContentPageLayout>
-
-<style>
-	h2 {
-		margin-top: 64px;
-	}
-
-	div {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-		justify-content: center;
-	}
-</style>
