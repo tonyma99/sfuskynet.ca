@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition'
+
 	let alert = false
 	let color: string
 	let disabled = false
@@ -17,7 +19,7 @@
 			},
 			body: JSON.stringify(Object.fromEntries(formData))
 		})
-		if (result.status === 200) success = true
+		result.status === 200 ? (success = true) : (success = false)
 		alert = true
 		disabled = false
 	}
@@ -31,7 +33,7 @@
 		<button {disabled}>Submit</button>
 	</form>
 	{#if alert}
-		<div>
+		<div transition:fade={{ duration: 200 }}>
 			<p style:color>
 				{#if success}
 					Message successfully sent.
