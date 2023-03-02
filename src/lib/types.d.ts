@@ -1,8 +1,8 @@
 export interface Person {
 	name: string
-	position: string
+	position?: string
 	image?: string
-	linkedin: string
+	linkedin?: string
 }
 
 export interface Sponsor {
