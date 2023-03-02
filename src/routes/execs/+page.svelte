@@ -68,6 +68,15 @@
 			{/each}
 		</div>
 	</div>
+
+	<div>
+		<h2>Alumni</h2>
+		<div>
+			{#each Array(10) as _}
+				<Profile name="Name" />
+			{/each}
+		</div>
+	</div>
 </ContentPageLayout>
 
 <style>
