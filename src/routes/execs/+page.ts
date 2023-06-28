@@ -34,6 +34,12 @@ const executives: Array<Person> = [
 		position: 'VP of Finance',
 		image: '/images/profile/adam_spelrem.webp',
 		linkedin: 'https://www.linkedin.com/in/adam-spelrem-8b5059256/'
+	},
+	{
+		name: 'Mani Samet',
+		position: 'VP of Administration',
+		image: '/images/profile/mani.webp',
+		linkedin: 'https://www.linkedin.com/in/mani-samet-6b7288260/'
 	}
 ]
 
@@ -49,12 +55,6 @@ const directors: Array<Person> = [
 		position: 'Director of Outreach',
 		image: '/images/profile/martin.webp',
 		linkedin: 'https://www.linkedin.com/in/matin-keivanloo-2152a0204'
-	},
-	{
-		name: 'Mani Samet',
-		position: 'Director of Administration',
-		image: '/images/profile/mani.webp',
-		linkedin: 'https://www.linkedin.com/in/mani-samet-6b7288260/'
 	}
 ]
 
