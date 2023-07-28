@@ -7,6 +7,7 @@
 		directors: Array<Person>
 		leads: Array<Person>
 		heads: Array<Person>
+		coordinators: Array<Person>
 		alumni: Array<Person>
 	}
 	const titleText = 'Execs'
@@ -60,6 +61,20 @@
 		<h2>Heads</h2>
 		<div>
 			{#each data.heads as exec}
+				<Profile
+					name={exec.name}
+					position={exec.position}
+					image={exec.image}
+					linkedin={exec.linkedin}
+				/>
+			{/each}
+		</div>
+	</div>
+
+	<div>
+		<h2>Coordinators</h2>
+		<div>
+			{#each data.coordinators as exec}
 				<Profile
 					name={exec.name}
 					position={exec.position}
