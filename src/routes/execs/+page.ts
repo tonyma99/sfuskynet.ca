@@ -1,7 +1,7 @@
 import type { Person } from '$lib/types'
 
 export const load = () => {
-	return { executives, directors, leads, heads, alumni }
+	return { executives, directors, leads, heads, coordinators, alumni }
 }
 
 const executives: Array<Person> = [
@@ -10,18 +10,6 @@ const executives: Array<Person> = [
 		position: 'President',
 		image: '/images/profile/zach_spencer.webp',
 		linkedin: 'https://www.linkedin.com/in/zachary-k-spencer/'
-	},
-	{
-		name: 'Seyed Arad Shojaee',
-		position: 'VP of Member Experience',
-		image: '/images/profile/seyed_arad_shojaee.webp',
-		linkedin: 'https://www.linkedin.com/in/seyed-arad-shojaee-a8a175222/'
-	},
-	{
-		name: 'Thomas Challis',
-		position: 'VP of Public Relations',
-		image: '/images/profile/thomas_challis.webp',
-		linkedin: 'https://www.linkedin.com/in/thomas-challis-36460b1ba/'
 	},
 	{
 		name: 'Yu-Xing Lim',
@@ -34,16 +22,27 @@ const executives: Array<Person> = [
 		position: 'VP of Finance',
 		image: '/images/profile/adam_spelrem.webp',
 		linkedin: 'https://www.linkedin.com/in/adam-spelrem-8b5059256/'
+	},
+	{
+		name: 'Thomas Challis',
+		position: 'VP of Public Relations',
+		image: '/images/profile/thomas_challis.webp',
+		linkedin: 'https://www.linkedin.com/in/thomas-challis-36460b1ba/'
+	},
+	{
+		name: 'Seyed Arad Shojaee',
+		position: 'VP of Member Experience',
+		image: '/images/profile/seyed_arad_shojaee.webp',
+		linkedin: 'https://www.linkedin.com/in/seyed-arad-shojaee-a8a175222/'
+	},
+	{
+		name: 'Mani Samet',
+		position: 'VP of Administration',
+		linkedin: 'https://www.linkedin.com/in/mani-samet-6b7288260/'
 	}
 ]
 
 const directors: Array<Person> = [
-	{
-		name: 'Ara Christie',
-		position: 'Director of Graphic Design',
-		image: '/images/profile/ara.webp',
-		linkedin: 'https://www.linkedin.com/in/ara-christie-8a0404261'
-	},
 	{
 		name: 'Matin Keivanloo',
 		position: 'Director of Outreach',
@@ -51,19 +50,23 @@ const directors: Array<Person> = [
 		linkedin: 'https://www.linkedin.com/in/matin-keivanloo-2152a0204'
 	},
 	{
-		name: 'Mani Samet',
-		position: 'Director of Administration',
-		image: '/images/profile/mani.webp',
-		linkedin: 'https://www.linkedin.com/in/mani-samet-6b7288260/'
+		name: 'Ara Christie',
+		position: 'Director of Graphic Design',
+		image: '/images/profile/ara.webp',
+		linkedin: 'https://www.linkedin.com/in/ara-christie-8a0404261'
+	},
+	{
+		name: 'Yoon You',
+		position: 'Director of Recruitment',
+		linkedin: 'https://www.linkedin.com/in/yoonsangyou/'
 	}
 ]
 
 const leads: Array<Person> = [
 	{
-		name: 'Arvin Amini',
+		name: 'Zachary Goodman',
 		position: 'Mechanics Team Lead',
-		image: '/images/profile/arvin.webp',
-		linkedin: 'https://www.linkedin.com/in/arvin-amini/'
+		linkedin: 'https://www.linkedin.com/in/zachary-goodman-2738a5270/'
 	},
 	{
 		name: 'Matthew do Santos-Zounon',
@@ -85,6 +88,24 @@ const heads: Array<Person> = [
 		position: 'Head of Software Development',
 		image: '/images/profile/vlad.webp',
 		linkedin: 'https://www.linkedin.com/in/vlad-nadtochii-b451b5175/'
+	}
+]
+
+const coordinators: Array<Person> = [
+	{
+		name: 'Rahim Dharamsi',
+		position: 'Outreach Coordinator',
+		linkedin: 'https://www.linkedin.com/in/rahim-dharamsi-631862263/'
+	},
+	{
+		name: 'Mohnish Devarapalli',
+		position: 'Outreach Coordinator',
+		linkedin: 'https://www.linkedin.com/in/rahim-dharamsi-631862263/'
+	},
+	{
+		name: 'Timothy Baek',
+		position: 'Events Coordinator',
+		linkedin: 'https://www.linkedin.com/in/rahim-dharamsi-631862263/'
 	}
 ]
 
