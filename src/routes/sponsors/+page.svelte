@@ -2,7 +2,7 @@
 	import { ContentPageLayout } from '$lib/components'
 	import type { Sponsor } from '$lib/types'
 
-	export let data: { sponsors: Array<Sponsor> }
+	export let data: { sponsors: any }
 	const headingText = 'Sponsors'
 	const description = `
 		The sponsors section of our website recognizes and thanks the companies and organizations that have generously supported us.
@@ -11,12 +11,75 @@
 </script>
 
 <ContentPageLayout {headingText} {description}>
-	<h2>Gold Sponsors</h2>
 	<div>
-		{#each data.sponsors as sponsor}
-			<a href={sponsor.website} target="_blank" rel="noreferrer"
-				><img src={sponsor.logo} alt="{sponsor.name} logo" width="256" height="64" /></a
-			>
+		{#each data.sponsors.large as sponsor}
+			{#if sponsor.website}
+			<a href={sponsor.website} target="_blank" rel="noreferrer">
+				{#if sponsor.logo}
+					<img src={sponsor.logo} alt="{sponsor.name} logo" width="320" height="96" />
+				{:else}
+				<div class="sponsorName">
+					<span>{sponsor.name}</span>
+				</div>
+				{/if}
+			</a>
+			{:else}
+				{#if sponsor.logo}
+					<img src={sponsor.logo} alt="{sponsor.name} logo" width="320" height="96" />
+				{:else}
+				<div class="sponsorName">
+					<span>{sponsor.name}</span>
+				</div>
+				{/if}
+			{/if}
+		{/each}
+	</div>
+
+	<div>
+		{#each data.sponsors.medium as sponsor}
+			{#if sponsor.website}
+			<a href={sponsor.website} target="_blank" rel="noreferrer">
+				{#if sponsor.logo}
+					<img src={sponsor.logo} alt="{sponsor.name} logo" width="256" height="72" />
+				{:else}
+				<div class="sponsorName">
+					<span>{sponsor.name}</span>
+				</div>
+				{/if}
+			</a>
+			{:else}
+				{#if sponsor.logo}
+					<img src={sponsor.logo} alt="{sponsor.name} logo" width="256" height="72" />
+				{:else}
+				<div class="sponsorName">
+					<span>{sponsor.name}</span>
+				</div>
+				{/if}
+			{/if}
+		{/each}
+	</div>
+
+	<div>
+		{#each data.sponsors.small as sponsor}
+			{#if sponsor.website}
+			<a href={sponsor.website} target="_blank" rel="noreferrer">
+				{#if sponsor.logo}
+					<img src={sponsor.logo} alt="{sponsor.name} logo" width="128" height="64" />
+				{:else}
+					<div class="sponsorName">
+						<span>{sponsor.name}</span>
+					</div>
+				{/if}
+			</a>
+			{:else}
+				{#if sponsor.logo}
+					<img src={sponsor.logo} alt="{sponsor.name} logo" width="128" height="64" />
+				{:else}
+				<div class="sponsorName">
+					<span>{sponsor.name}</span>
+				</div>
+				{/if}
+			{/if}
 		{/each}
 	</div>
 </ContentPageLayout>
@@ -36,5 +99,23 @@
 	img {
 		display: block;
 		object-fit: contain;
+	}
+
+	div + div {
+		margin-top: 3rem;
+	}
+
+	span {
+		text-align: center;
+		font-size: 1.1rem;
+		font-weight: bold;
+		vertical-align: middle;
+	}
+
+	.sponsorName {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 256px;
 	}
 </style>
